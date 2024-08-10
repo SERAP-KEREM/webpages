@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sarpanch:wght@400;500;600;700;800;900&display=swap');
+:root {
+    --bg-black-900: #f2f2fc;
+    --bg-black-100: #fdf9ff;
+    --bg-black-50: #e8dfec;
+    --text-black-900: #302e4d;
+    --text-black-700: #504e70;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    background-color: var(--bg-black-100);
+    color: var(--text-black-900);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+
+}
+
+/* Ana Konteyner Stili */
+.main-container {
+    display: flex;
+    height: 100%; /* Tüm ekran yüksekliği */
+}
+
+/* Sidebar (Aside) Stili */
+.aside {
+    width: 250px; /* Sol bölüm genişliği */
+    background: var(--bg-black-100);
+    height: 100%;
+    border-right: 1px solid var(--bg-black-50);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    overflow-y: auto;
+    padding: 25px; /* İçerik alanına boşluk ekler */
+}
+
+/* Logo Stili */
+.aside .logo {
+    font-size: 30px;
+    text-transform: capitalize; /* Metin ilk harfi büyük yapar */
+   
+    
+}
+.aside .logo a {
+    text-decoration: none; /* Alt çizgi kaldırma */
+    
+}
+.aside .logo a span{
+   font-family: 'Clicker Script', cursive;
+   font-size: 40px;
+   
+   
+}
+
+/* Logo Bağlantısının Öncesine Eklenen Pseudo-element Stili */
+.aside .logo a::before {
+    content: ''; /* Boş içerik sağlar */
+    position: absolute; /* Konumu kesin olarak ayarlar */
+    width: 20px; /* Genişlik */
+    height: 20px; /* Yükseklik */
+    border-bottom: 5px solid var(--skin-color); /* Alt kenar rengi */
+    border-left: 5px solid var(--skin-color); /* Sol kenar rengi */
+    bottom:680px; /* Alt kenardan sıfır mesafe */
+    left:10px; /* Sol kenardan sıfır mesafe */
+   /* background-color: transparent; /* Arka plan rengini şeffaf yapar */
+   
+}
+
+/* Logo Bağlantısının Sonrasına Eklenen Pseudo-element Stili */
+.aside .logo a::after {
+    content: ''; /* Boş içerik sağlar */
+    position: absolute; /* Konumu kesin olarak ayarlar */
+    width: 20px; /* Genişlik */
+    height: 20px; /* Yükseklik */
+    border-top: 5px solid var(--skin-color); /* Üst kenar rengi */
+    border-right: 5px solid var(--skin-color); /* Sağ kenar rengi */
+    top: 0; /* Üst kenardan sıfır mesafe */
+    right: 0; /* Sağ kenardan sıfır mesafe */
+    background-color: transparent; /* Arka plan rengini şeffaf yapar */
+}
+
+/* Sidebar Navigation Toggle Button Styling */
+.aside .nav-toggler {
+    height: 40px; /* Butonun yüksekliği */
+    width: 45px; /* Butonun genişliği */
+    border: 1px solid var(--bg-black-50); /* Kenar çizgisi rengi */
+    cursor: pointer; /* Fare işareti işaretçi olur */
+    position: fixed; /* Sabit konumlandırma */
+    left: 300px; /* Soldan mesafe */
+    top: 20px; /* Üstten mesafe */
+    border-radius: 5px; /* Köşe yuvarlama */
+    background: var(--bg-black-100); /* Arka plan rengi */
+    display: none; /* Flexbox kullanımı */
+    align-items: center; /* Dikeyde ortalama */
+    justify-content: center; /* Yatayda ortalama */
+}
+
+/* İçindeki span elementinin stili */
+.aside .nav-toggler span {
+    height: 2px; /* Çizginin yüksekliği */
+    width: 18px; /* Çizginin genişliği */
+    background: var(--skin-color); /* Çizginin rengi */
+    display: inline-block; /* Satır içi blok olarak gösterir */
+    margin: 2px; /* Çizgiler arasına boşluk ekler */
+    position: relative;
+}
+
+
+/* span'ın üstündeki çizgi */
+.aside .nav-toggler span::before {
+    content: '';
+    height: 2px;
+    width: 18px;
+    background: var(--skin-color);
+    position: absolute;
+    top: -6px; /* Yatay çizginin üst kenarı */
+    left: 0;
+}
+
+/* span'ın altındaki çizgi */
+.aside .nav-toggler span::after {
+    content: '';
+    height: 2px;
+    width: 18px;
+    background: var(--skin-color);
+    position: absolute;
+    bottom: -6px; /* Yatay çizginin alt kenarı */
+    left: 0;
+  
+}
+
+
+/* Sidebar Navigation Styling */
+.aside .nav {
+    margin-top: 50px; /* Menünün üst kısmında boşluk */
+}
+
+.aside .nav li {
+    margin-bottom: 20px; /* Menü öğeleri arasındaki boşluk */
+    display: block; /* Menü öğelerini blok olarak görüntüle */
+}
+
+.aside .nav li a {
+    font-size: 16px; /* Font boyutu */
+    font-weight: 600; /* Font kalınlığı */
+    display: block; /* Bağlantıyı blok olarak görüntüle */
+    border-bottom: 1px solid var(--bg-black-50); /* Alt çizgi */
+    color: var(--text-black-900); /* Yazı rengi */
+    padding: 5px 15px; /* İç boşluk */
+    text-decoration: none; /* Alt çizgi kaldırma */
+    transition: color 0.3s; /* Renk değişimi için geçiş efekti */
+}
+
+.aside .nav li a.active {
+    color: var(--skin-color); /* Aktif bağlantı rengi */
+   
+}
+
+.aside .nav li a i {
+    
+    margin-right: 15px;
+}
+ul {
+    list-style: none; /* Liste işaretlerini kaldırır */
+}
+
+.section {
+    background: var(--bg-black-900);
+    min-height: 100vh;
+    display: block;
+    padding: 0 30px;
+    opacity: 1;
+}
+
+.hidden
+{
+    display: none !important;
+}
+
+.main-content
+{
+    padding-left: 270px;
+}
+
+.padd-15 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.container {
+    max-width: 1100px;
+    width: 100%;
+    margin: auto;
+}
+
+.section .container {
+    padding-top: 60px;
+    padding-bottom: 70px;
+}
+
+.section-title {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 60px;
+  
+}
+.section-title h2 {
+    font-size: 40px; /* Başlık font boyutu */
+    color: var(--text-black-900); /* Başlık rengi */
+    font-weight: 700; /* Font kalınlığı */
+    position: relative; /* Konumlandırma */
+}
+.section-title h2::before {
+    content: '';
+    height: 4px;
+    width: 50px;
+    background-color: var(--skin-color);
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+.section-title h2::after {
+    content: '';
+    height: 4px;
+    width: 25px;
+    background-color: var(--skin-color);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 8px;
+}
+
+
+
+
+ul li {
+    margin-bottom: 15px; /* Menü elemanları arasında boşluk */
+}
+
+ul li a {
+    display: block;
+    color: var(--text-black-900);
+    font-size: 16px;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px; /* Köşe yuvarlama */
+    transition: background-color 0.3s; /* Arka plan renginde geçiş efekti */
+}
+
+ul li a.active, ul li a:hover {
+    background-color: var(--bg-black-50); /* Aktif ve hover durumunda arka plan rengi */
+}
+
+/* Satır Stili */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 15px;
+    margin-right: 15px;
+    position: relative;
+}
+
+/* Buton Stili */
+.btn {
+    font-size: 16px; /* Font boyutu */
+    font-weight: 500; /* Font kalınlığı */
+    padding: 12px 35px; /* İç boşluk */
+    color: white; /* Yazı rengi */
+    border-radius: 40px; /* Köşe yuvarlama */
+    display: inline-block; /* Satır içi blok */
+    white-space: nowrap; /* Satır kaydırmayı önler */
+    border: none;
+    background: var(--skin-color); /* Arka plan rengi */
+    transition: all 0.3s ease; /* Geçiş efekti */
+    text-decoration: none;
+}
+
+/* Buton Hover Efekti */
+.btn:hover {
+   /* background: darken(var(--skin-color), 10%); /* Hover durumunda arka plan rengi */
+    transform: scale(1.05);
+}
+
+
+/* Ana İçerik Stili */
+.main-content {
+    margin-left: 250px; /* Sol bölüm genişliği kadar boşluk bırak */
+    flex: 1;
+    padding: 20px;
+    background: var(--bg-black-900);
+    color: var(--text-black-900);
+    overflow: auto; /* İçerik taşmasını kontrol eder */
+}
+
+/* Home Bölümü */
+.home {
+    min-height: 100vh; /* Sayfa yüksekliğini kaplar */
+    display: flex; /* Flexbox düzeni */
+    color: var(--text-black-900); /* Metin rengi */
+    align-items: center; /* Dikeyde ortalama */
+}
+
+/* Home Bilgi Bölümü */
+.home .home-info {
+    flex: 0 0 60%; /* 60% genişlik */
+    max-width: 60%; /* Maksimum genişlik 60% */
+    padding: 0 15px; /* Sağ ve sol padding */
+}
+h3.hello
+{
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+h3.hello span {
+    font-family: 'Clicker Script', cursive; /* Yazı tipi */
+    font-size: 30px; /* Font boyutu */
+    font-weight: 700; /* Font kalınlığı */
+    color: var(--skin-color); /* Yazı rengi */
+}
+
+/* 'My Profession' başlığı */
+h3.my-profession {
+    font-size: 30px; /* Font boyutu */
+    margin: 15px 0; /* Üst ve alt boşluk */
+    color: var(--text-black-900); /* Yazı rengi */
+}
+
+/* Typing efekti için stil */
+.typing {
+    color: var(--skin-color); /* Yazı rengi */
+}
+
+/* Home bilgi bölümü içindeki paragraf */
+.home-info p {
+    margin-bottom: 70px; /* Alt boşluk */
+    font-size: 20px; /* Font boyutu */
+    color: var(--text-black-700); /* Yazı rengi */
+}
+
+
+.home-img::after {
+    content: '';
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    border-bottom: 10px solid var(--skin-color);
+    border-right: 10px solid var(--skin-color);
+    right: 20px;
+    bottom: -40px;
+}
+
+.home-img::before {
+    content: '';
+    position: absolute;
+    height: 100px;
+    width: 80px;
+    border-top: 10px solid var(--skin-color);
+    border-left: 10px solid var(--skin-color);
+    left: 700px;
+    top: -40px;
+    
+}
+
+
+
+/* Home Görseli */
+.home .home-img img {
+    margin: auto;
+    border-radius: 5px;
+    height: 400px; /* Görsel yüksekliği */
+    
+  
+}
+/* About */
+.about .about-content {
+    flex: 0 0 100%;   /* Esneklik değerini 100% genişlik olarak ayarlar */
+    max-width: 100%;  /* Maksimum genişliği 100% olarak ayarlar */
+}
+
+/* .about-content içerisindeki .about-text için genel ayarlar */
+.about .about-content .about-text {
+    flex: 0 0 100%; /* Genişliği %100 yapar, esnemeyi engeller */
+    max-width: 100%; /* Maksimum genişliği %100 olarak sınırlar */
+}
+
+/* .about-text içerisindeki h3 başlık stili */
+.about .about-content .about-text h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: var(--text-black-900); /* Başlık metin rengi */
+}
+
+/* h3 başlık içerisindeki span stili */
+.about .about-content .about-text h3 span {
+    color: var(--skin-color); /* Span için yazı rengi */
+}
+
+
+
+/* About Text Paragraph Styling */
+.about .about-content .about-text p {
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--text-black-700);
+}
+
+
+
+
+
+/* Personal Info Section */
+.about .about-content .personal-info {
+    flex: 0 0 60%;
+    max-width: 60%;
+    margin-top: 40px;
+ 
+   
+}
+
+.about .about-content .personal-info .info-item {
+    flex: 0 0 40%;
+    max-width: 40%;
+    
+}
+
+.about .about-content .personal-info .info-item p {
+    font-weight: 600;
+    padding: 10px 0;
+    font-size: 16px;
+    color: var(--text-black-900);
+    border-bottom: 1px solid var(--bg-black-50);
+  
+}
+
+.about .about-content .personal-info .info-item p span {
+    font-weight: 400;
+    color: var(--text-black-700);
+    margin-left: 4px;
+    display: inline-block;
+}
+
+
+.about .about-content .skills {
+    flex: 0 0 40%;
+    max-width: 40%;
+    margin-top: 40px;
+    background-color: green;
+}
+
