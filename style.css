@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sarpanch:wght@400;500;600;700;800;900&display=swap');
+
+
+
 :root {
     --bg-black-900: #f2f2fc;
     --bg-black-100: #fdf9ff;
@@ -288,6 +291,11 @@ ul li a.active, ul li a:hover {
     transform: scale(1.05);
 }
 
+.shadow-dark{
+    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+}
+
+
 
 /* Ana İçerik Stili */
 .main-content {
@@ -379,6 +387,9 @@ h3.my-profession {
     
   
 }
+
+
+
 /* About */
 .about .about-content {
     flex: 0 0 100%;   /* Esneklik değerini 100% genişlik olarak ayarlar */
@@ -398,6 +409,9 @@ h3.my-profession {
     font-weight: 700;
     color: var(--text-black-900); /* Başlık metin rengi */
 }
+
+
+
 
 /* h3 başlık içerisindeki span stili */
 .about .about-content .about-text h3 span {
@@ -449,10 +463,162 @@ h3.my-profession {
 }
 
 
+/* Buttons Container */
+.about .about-content .personal-info .buttons {
+    margin-top: 30px;
+}
+
+/* Button Styling */
+.about .about-content .personal-info .buttons .btn {
+    margin-right: 15px;
+    margin-top: 10px;
+}
+
+
+
+/* Skills Section */
 .about .about-content .skills {
     flex: 0 0 40%;
     max-width: 40%;
     margin-top: 40px;
-    background-color: green;
 }
 
+.about .about-content .skills .skill-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 15px; /* Her beceri öğesi arasında boşluk oluşturur */
+}
+
+.about .about-content .skills .skill-item h5 {
+    line-height: 40px;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--text-black-900);
+    text-transform: capitalize;
+}
+
+
+/* Progress Bar Container */
+.about .about-content .skills .skill-item .progress {
+    background-color: var(--bg-black-50); /* Arka plan rengi */
+    height: 7px; /* Yükseklik */
+    border-radius: 4px; /* Köşe yuvarlama */
+    width: 100%; /* Genişlik */
+    position: relative; /* İçindeki öğeler için konumlama */
+}
+
+/* Skill Item Margin */
+.about .about-content .skills .skill-item {
+    margin-bottom: 25px; /* Alt boşluk */
+}
+
+/* Progress Bar Fill */
+.about .about-content .skills .skill-item .progress .progress-in {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    border-radius: 4px;
+    background-color: var(--skin-color); /* Doldurma rengi */
+}
+
+
+/* Skill Percent Position and Style */
+.about .about-content .skills .skill-item .skill-percent {
+    position: absolute; /* Konumlama */
+    right: 0; /* Sağdan hizalama */
+    color: var(--text-black-900); /* Yazı rengi */
+    top: -40px; /* Üstten uzaklık */
+    font-weight: 400; /* Yazı kalınlığı */
+    line-height: 40px;
+}
+
+
+
+
+/* Education and Experience Section Styles */
+.about .about-content .education,
+.about .about-content .experience {
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-top: 30px;
+}
+
+/* Title Styles */
+.about .about-content h3.title {
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: var(--text-black-900);
+}
+
+/* Timeline Box Style */
+.about .about-content .timeline-box {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+/* Timeline Style */
+.about .about-content .timeline {
+    background-color: var(--bg-black-100);
+    padding: 30px 15px;
+    border: 1px solid var(--bg-black-50);
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+}
+
+.about .about-content .timeline .timeline-item {
+    position: relative;
+    padding-left: 37px;
+    padding-bottom: 50px;
+}
+
+.about .about-content .timeline .timeline-item:last-child {
+    padding-bottom: 0;
+}
+
+.about .about-content .timeline .timeline-item::before {
+    content: '';
+    width: 1px;
+    position: absolute;
+    height: 100%;
+    left: 7px;
+    top: 0;
+    background-color: var(--skin-color);
+}
+
+.about .about-content .timeline .circle-dot {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: var(--skin-color);
+}
+
+.about .about-content .timeline .timeline-date {
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 12px;
+    color: var(--text-black-700);
+}
+.about .about-content .timeline .timeline-date .fa {
+    margin-right: 5px;
+}
+
+.about .about-content .timeline .timeline-title {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    color: var(--text-black-900);
+}
+
+.about .about-content .timeline .timeline-text {
+    line-height: 25px;
+    font-size: 16px;
+    text-align: justify;
+    color: var(--text-black-700);
+}
