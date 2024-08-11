@@ -25,9 +25,12 @@ body {
 
 /* Ana Konteyner Stili */
 .main-container {
-    display: flex;
-    height: 100%; /* Tüm ekran yüksekliği */
-}
+  
+    width: 100%;
+    /*padding: 0 -15px;*/
+    padding-left: 10px; /* Sol iç boşluğu azaltın */
+    padding-right: 10px; /* Sağ iç boşluğu azaltın */
+
 
 /* Sidebar (Aside) Stili */
 .aside {
@@ -186,10 +189,7 @@ ul {
     display: none !important;
 }
 
-.main-content
-{
-    padding-left: 270px;
-}
+
 
 .padd-15 {
     padding-left: 15px;
@@ -199,7 +199,7 @@ ul {
 .container {
     max-width: 1100px;
     width: 100%;
-    margin: auto;
+    margin: auto;/*/*/*/*/*/*/*/*/*/*/*/
 }
 
 .section .container {
@@ -299,9 +299,13 @@ ul li a.active, ul li a:hover {
 
 /* Ana İçerik Stili */
 .main-content {
-    margin-left: 250px; /* Sol bölüm genişliği kadar boşluk bırak */
+
+   
+    padding: 20px; /* İç boşlukları azaltın */
+
+
+    margin-left: 20px; /* Sol bölüm genişliği kadar boşluk bırak */
     flex: 1;
-    padding: 20px;
     background: var(--bg-black-900);
     color: var(--text-black-900);
     overflow: auto; /* İçerik taşmasını kontrol eder */
@@ -390,10 +394,14 @@ h3.my-profession {
 
 
 
-/* About */
+
+
+
+/* Eğitim ve Deneyim Bölümü İçin Genel Stiller */
 .about .about-content {
-    flex: 0 0 100%;   /* Esneklik değerini 100% genişlik olarak ayarlar */
-    max-width: 100%;  /* Maksimum genişliği 100% olarak ayarlar */
+    display: flex; /* İçerikleri yatay olarak hizalar */
+    flex-wrap: wrap; /* İçerikler sığmadığında alt satıra geçmesine izin verir */
+    justify-content: space-between; /* İçerikler arasında boşluk bırakır */
 }
 
 /* .about-content içerisindeki .about-text için genel ayarlar */
@@ -431,13 +439,11 @@ h3.my-profession {
 
 
 
-/* Personal Info Section */
+/* Kişisel Bilgiler Bölümü */
 .about .about-content .personal-info {
-    flex: 0 0 60%;
-    max-width: 60%;
-    margin-top: 40px;
- 
-   
+    flex: 0 0 60%; /* Kişisel Bilgiler bölümünün genişliğini belirler */
+    max-width: 60%; /* Maksimum genişliği sınırlar */
+    margin-top: 40px; /* Üstten boşluk bırakır */
 }
 
 .about .about-content .personal-info .info-item {
@@ -446,13 +452,13 @@ h3.my-profession {
     
 }
 
+/* Kişisel Bilgiler Bölümündeki Öğeler */
 .about .about-content .personal-info .info-item p {
     font-weight: 600;
     padding: 10px 0;
     font-size: 16px;
     color: var(--text-black-900);
     border-bottom: 1px solid var(--bg-black-50);
-  
 }
 
 .about .about-content .personal-info .info-item p span {
@@ -476,17 +482,18 @@ h3.my-profession {
 
 
 
-/* Skills Section */
+/* Beceriler Bölümü */
 .about .about-content .skills {
-    flex: 0 0 40%;
-    max-width: 40%;
-    margin-top: 40px;
+    flex: 0 0 40%; /* Beceriler bölümünün genişliğini belirler */
+    max-width: 40%; /* Maksimum genişliği sınırlar */
+    margin-top: 40px; /* Üstten boşluk bırakır */
 }
 
+/* Beceriler Bölümü İçindeki Öğeler */
 .about .about-content .skills .skill-item {
-    flex: 0 0 100%;
-    max-width: 100%;
-    margin-bottom: 15px; /* Her beceri öğesi arasında boşluk oluşturur */
+    flex: 0 0 100%; /* Beceriler bölümündeki her beceri öğesinin genişliğini belirler */
+    max-width: 100%; /* Maksimum genişliği sınırlar */
+    margin-bottom: 15px; /* Her beceri öğesi arasına boşluk bırakır */
 }
 
 .about .about-content .skills .skill-item h5 {
@@ -539,8 +546,8 @@ h3.my-profession {
 /* Education and Experience Section Styles */
 .about .about-content .education,
 .about .about-content .experience {
-    flex: 0 0 50%;
-    max-width: 50%;
+    flex: 0 0 45%; /* Eğitim ve deneyim bölümleri için genişliği ayarlar */
+    max-width: 45%; /* Maksimum genişliği belirler */
     margin-top: 30px;
 }
 

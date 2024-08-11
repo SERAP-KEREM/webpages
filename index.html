@@ -14,27 +14,29 @@
     <!-- ===== Main Container Start ===== -->
     <div class="main-container">
         <!-- ===== Aside Start ===== -->
-        <div class="aside">
+        <aside class="aside">
             <div class="logo">
                 <a href="#"><span>S</span>erap KEREM</a>
             </div>
             <div class="nav-toggler">
                 <span></span>
             </div>
-            <ul class="nav">
-                <li><a href="#" class="active"><i class="fa fa-home"></i> Home</a></li>
-                <li><a href="#"><i class="fa fa-user"></i> About</a></li>
-                <li><a href="#"><i class="fa fa-list"></i> Services</a></li>
-                <li><a href="#"><i class="fa fa-briefcase"></i> Portfolio</a></li>
-                <li><a href="#"><i class="fa fa-comments"></i> Contact</a></li>
-            </ul>
-        </div>
+            <nav>
+                <ul class="nav">
+                    <li><a href="#home" class="active"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a href="#about"><i class="fa fa-user"></i> About</a></li>
+                    <li><a href="#services"><i class="fa fa-list"></i> Services</a></li>
+                    <li><a href="#portfolio"><i class="fa fa-briefcase"></i> Portfolio</a></li>
+                    <li><a href="#contact"><i class="fa fa-comments"></i> Contact</a></li>
+                </ul>
+            </nav>
+        </aside>
         <!-- ===== Aside End ===== -->
 
         <!-- ===== Main Content Start ===== -->
-        <div class="main-content">
+        <main class="main-content">
             <!-- ===== Home Section Start ===== -->
-            <section class="home section ">
+            <section id="home" class="home section hidden">
                 <div class="container">
                     <div class="row">
                         <div class="home-info padd-15">
@@ -52,7 +54,7 @@
             <!-- ===== Home Section End ===== -->
 
             <!-- ===== About Section Start ===== -->
-            <section class="about section">
+            <section id="about" class="about section">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -64,13 +66,8 @@
                         <div class="about-content padd-15">
                             <div class="row">
                                 <div class="about-text padd-15">
-                                    <h3>I'm Serap KEREM and <span>Game Developer</span></h3>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quo ea commodi
-                                    autem eius id error. Corporis inventore adipisci hic sequi! Blanditiis architecto
-                                    reprehenderit rerum assumenda, illum aliquam quae dolore nobis laudantium
-                                    incididunt maiores harum officiis animi commodi! Ipsam exercitationem molestias,
-                                    non et velit facilis cupiditate, ducimus, dolor harum explicabo cum
-                                    necessitatibus obcaecati minima dignissimos.</p>
+                                    <h3>I'm Serap KEREM, a <span>Game Developer</span></h3>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quo ea commodi autem eius id error...</p>
                                 </div>
                             </div>
 
@@ -145,82 +142,57 @@
                                 </div>
                             </div>
                             
-
-
                             <!-- Education and Experience Section -->
-
-
-<!-- ===== Education and Experience Section ===== -->
-<div class="row">
-    <div class="education padd-15">
-        <h3 class="title">Education</h3>
-        <div class="timeline-box padd-15">
-            <div class="timeline shadow-dark">
-                <!-- Timeline Item -->
-                <div class="timeline-item">
-                    <div class="circle-dot"></div>
-                    <h3 class="timeline-date">
-                        <i class="fa fa-calendar"></i> 2013 - 2015
-                    </h3>
-                    <h4 class="timeline-title">Master in Computer Science</h4>
-                    <p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, maiores. Facere, minus? Quam minus autem quidem similique dignissimos cumque dolorum quis optio blanditiis, doloremque veritatis.</p>
-                </div>
-                <!-- Timeline Item -->
-                <div class="timeline-item">
-                    <div class="circle-dot"></div>
-                    <h3 class="timeline-date">
-                        <i class="fa fa-calendar"></i> 2010 - 2013
-                    </h3>
-                    <h4 class="timeline-title">Bachelor in Computer Science</h4>
-                    <p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, maiores. Facere, minus? Quam minus autem quidem similique dignissimos cumque dolorum quis optio blanditiis, doloremque veritatis.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="experience padd-15">
-        <h3 class="title">Experience</h3>
-        <div class="timeline-box padd-15">
-            <div class="timeline shadow-dark">
-                <!-- Timeline Item -->
-                <div class="timeline-item">
-                    <div class="circle-dot"></div>
-                    <h3 class="timeline-date">
-                        <i class="fa fa-calendar"></i> 2015 - 2018
-                    </h3>
-                    <h4 class="timeline-title">Game Developer at XYZ Company</h4>
-                    <p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, maiores. Facere, minus? Quam minus autem quidem similique dignissimos cumque dolorum quis optio blanditiis, doloremque veritatis.</p>
-                </div>
-                <!-- Timeline Item -->
-                <div class="timeline-item">
-                    <div class="circle-dot"></div>
-                    <h3 class="timeline-date">
-                        <i class="fa fa-calendar"></i> 2018 - Present
-                    </h3>
-                    <h4 class="timeline-title">Senior Game Developer at ABC Studios</h4>
-                    <p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, maiores. Facere, minus? Quam minus autem quidem similique dignissimos cumque dolorum quis optio blanditiis, doloremque veritatis.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
+                            <div class="row">
+                                <div class="education padd-15">
+                                    <h3 class="title">Education</h3>
+                                    <div class="timeline-box padd-15">
+                                        <div class="timeline shadow-dark">
+                                            <!-- Timeline Item -->
+                                            <div class="timeline-item">
+                                                <div class="circle-dot"></div>
+                                                <h3 class="timeline-date"><i class="fa fa-calendar"></i> 2013 - 2015</h3>
+                                                <h4 class="timeline-title">Master in Computer Science</h4>
+                                                <p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                                            </div>
+                                            <!-- Timeline Item -->
+                                            <div class="timeline-item">
+                                                <div class="circle-dot"></div>
+                                                <h3 class="timeline-date"><i class="fa fa-calendar"></i> 2010 - 2013</h3>
+                                                <h4 class="timeline-title">Bachelor in Computer Science</h4>
+                                                <p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                
-
+                                <div class="experience padd-15">
+                                    <h3 class="title">Experience</h3>
+                                    <div class="timeline-box padd-15">
+                                        <div class="timeline shadow-dark">
+                                            <!-- Timeline Item -->
+                                            <div class="timeline-item">
+                                                <div class="circle-dot"></div>
+                                                <h3 class="timeline-date"><i class="fa fa-calendar"></i> 2015 - 2018</h3>
+                                                <h4 class="timeline-title">Game Developer at XYZ Company</h4>
+                                                <p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                                            </div>
+                                            <!-- Timeline Item -->
+                                            <div class="timeline-item">
+                                                <div class="circle-dot"></div>
+                                                <h3 class="timeline-date"><i class="fa fa-calendar"></i> 2018 - Present</h3>
+                                                <h4 class="timeline-title">Senior Game Developer at ABC Studios</h4>
+                                                <p class="timeline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-
             </section>
-
-
-
             <!-- ===== About Section End ===== -->
-
-        </div>
+        </main>
         <!-- ===== Main Content End ===== -->
     </div>
     <!-- ===== Main Container End ===== -->
