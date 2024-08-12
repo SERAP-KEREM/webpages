@@ -1,0 +1,51 @@
+/* Style Switcher */
+.style-switcher {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 100%;
+  background: #333;
+  color: #fff;
+  padding: 15px;
+  transform: translateX(100%);
+  transition: transform 0.3s;
+}
+
+.style-switcher.open {
+  transform: translateX(0);
+}
+
+.style-switcher-toggler {
+  position: absolute;
+  top: 15px;
+  left: -50px;
+  cursor: pointer;
+}
+
+.style-switcher-content {
+  margin-top: 60px;
+}
+
+.style-options {
+  display: flex;
+  justify-content: space-between;
+}
+
+.style-option {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.theme-toggler {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.day-night {
+  cursor: pointer;
+}
