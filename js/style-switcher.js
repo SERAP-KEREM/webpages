@@ -1,41 +1,50 @@
 document.addEventListener('DOMContentLoaded', function() {
-  // Yerel depolamadan tema seçimini al
-  var savedStyle = localStorage.getItem('theme-style');
+  // Yerel depolamadan tema seçimini al ve uygula
+  const savedStyle = localStorage.getItem('theme-style');
   if (savedStyle) {
     setActiveStyle(savedStyle);
   }
 
-  // Tema switcher toggler öğesini seç
-  var toggler = document.querySelector('.style-switcher-toggler');
-  if (toggler) {
-    toggler.addEventListener('click', function() {
-      var styleSwitcher = document.querySelector('.style-switcher');
-      if (styleSwitcher) {
-        styleSwitcher.classList.toggle('open');
-      }
-    });
-  }
+  // Tema switcher toggler öğesini seç ve toggle işlevi ekle
+  const toggler = document.querySelector('.style-switcher-toggler');
+  toggler?.addEventListener('click', () => {
+    document.querySelector('.style-switcher')?.classList.toggle('open');
+  });
 
-  // Tema değiştirme öğelerini seç
-  var colors = document.querySelectorAll('.colors .color-1, .colors .color-2, .colors .color-3, .colors .color-4, .colors .color-5');
-  colors.forEach(function(color) {
+  // Tema değiştirme öğelerini seç ve her birine tıklama işlevi ekle
+  const colors = document.querySelectorAll('.colors span');
+  colors.forEach(color => {
     color.addEventListener('click', function() {
-      setActiveStyle(this.className);
+      const colorClass = this.className;
+      setActiveStyle(colorClass);
     });
   });
+
+  // Dark mode için iconu seç ve toggle işlevi ekle
+  const dayNightToggle = document.querySelector('.day-night em');
+  dayNightToggle?.addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+    dayNightToggle.classList.toggle('fa-sun');
+    dayNightToggle.classList.toggle('fa-moon');
+    localStorage.setItem('dark-mode', document.body.classList.contains('dark') ? 'enabled' : 'disabled');
+  });
+
+  // Sayfa yüklendiğinde, dark mode durumunu kontrol et
+  const darkMode = localStorage.getItem('dark-mode');
+  if (darkMode === 'enabled') {
+    document.body.classList.add('dark');
+    dayNightToggle.classList.add('fa-sun');
+    dayNightToggle.classList.remove('fa-moon');
+  } else {
+    dayNightToggle.classList.add('fa-moon');
+    dayNightToggle.classList.remove('fa-sun');
+  }
 });
 
 function setActiveStyle(styleName) {
-  var link = document.getElementById('theme-style');
-  if (link) {
-    var alternateStyles = document.querySelectorAll('.alternate-style');
-    alternateStyles.forEach(function(style) {
-      style.disabled = true; // Tüm alternatif stilleri devre dışı bırak
-    });
-    var activeStyle = document.querySelector(`.alternate-style[title="${styleName}"]`);
-    if (activeStyle) {
-      activeStyle.disabled = false; // Seçilen temayı etkinleştir
-    }
-    localStorage.setItem('theme-style', styleName); // Tema seçimini yerel depolamaya kaydet
-  }
+  const alternateStyles = document.querySelectorAll('.alternate-style');
+  alternateStyles.forEach(style => {
+    style.disabled = style.getAttribute('title') !== styleName;
+  });
+  localStorage.setItem('theme-style', styleName);
 }

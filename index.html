@@ -8,7 +8,8 @@
   <!-- ==== CSS Files ==== -->
   <link rel="stylesheet" href="./css/style.css" />
   <link id="theme-style" rel="stylesheet" href="./css/skins/color-1.css" /> <!-- Varsayılan tema -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
   <link rel="shortcut icon" href="./images/icons8-portfolio-64.png" type="image/x-icon" />
   
   <!-- ==== Style Selector ==== -->
@@ -20,24 +21,8 @@
   <link rel="stylesheet" href="./css/style-switcher.css" />
 </head>
 <body>
-  <!-- ==== Style Switcher Start ==== -->
-  <div class="style-switcher open">
-    <div class="style-switcher-toggler s-icon">
-      <em class="fas fa-cog fa-spin"></em>
-    </div>
-    <div class="day-night s-icon">
-      <em class="fas fa-moon"></em>
-    </div>
-    <h4>Tema Renkleri</h4>
-    <div class="colors">
-      <span class="color-1" onclick="setActiveStyle('color-1')"></span>
-      <span class="color-2" onclick="setActiveStyle('color-2')"></span>
-      <span class="color-3" onclick="setActiveStyle('color-3')"></span>
-      <span class="color-4" onclick="setActiveStyle('color-4')"></span>
-      <span class="color-5" onclick="setActiveStyle('color-5')"></span>
-    </div>
-  </div>
-  <!-- ==== Style Switcher End ==== -->
+
+
     <!-- Typed.js Library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
 </head>
@@ -751,7 +736,7 @@ This fundamental knowledge strengthened my software development and problem solv
 
 
 <!-- ==== Style Switcher Start ==== -->
-<div class="style-switcher open">
+<div class="style-switcher">
   <div class="style-switcher-toggler s-icon">
     <em class="fas fa-cog fa-spin"></em>
   </div>
@@ -767,7 +752,9 @@ This fundamental knowledge strengthened my software development and problem solv
     <span class="color-5" onclick="setActiveStyle('color-5')"></span>
   </div>
 </div>
+
 <!-- ==== Style Switcher End ==== -->
+
 
     <!-- ==== JS Files ==== -->
     <script
@@ -776,25 +763,6 @@ This fundamental knowledge strengthened my software development and problem solv
     ></script>
     <script src="./js/script.js"></script>
 
-   <style type="text/css" data-typed-js-css="true">
-    .typed-cursor {
-        opacity: 1;
-    } 
-    .typed-cursor.typed-cursor--blink {
-        animation: typedjsBlink 0.7s infinite;
-        -webkit-animation: typedjsBlink 0.7s infinite;
-    }
-    @keyframes typedjsBlink {
-        50% { opacity: 0.0; }
-    }
-    @-webkit-keyframes typedjsBlink {
-        0% { opacity: 1; }
-        50% { opacity: 0.0; }
-        100% { opacity: 1; }
-    }
-</style>
-
-    </style>
     <script src="./js/style-switcher.js"></script>
 </body>
 </html>
