@@ -5,18 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio: Serap Kerem</title>
-    <!-- ==== CSS Files ==== -->
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/skins/color-1.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-    <link rel="shortcut icon" href="./images/icons8-portfolio-64.png" type="image/x-icon" />
-    <!-- ==== Style Selector ==== -->
-    <link rel="stylesheet" href="./css/skins/color-1.css" class="alternate-style" title="color-1" disabled />
-    <link rel="stylesheet" href="./css/skins/color-2.css" class="alternate-style" title="color-2" disabled />
-    <link rel="stylesheet" href="./css/skins/color-3.css" class="alternate-style" title="color-3" disabled />
-    <link rel="stylesheet" href="./css/skins/color-4.css" class="alternate-style" title="color-4" disabled />
-    <link rel="stylesheet" href="./css/skins/color-5.css" class="alternate-style" title="color-5" disabled />
-    <link rel="stylesheet" href="./css/style-switcher.css" />
+  <!-- ==== CSS Files ==== -->
+  <link rel="stylesheet" href="./css/style.css" />
+  <link id="theme-style" rel="stylesheet" href="./css/skins/color-1.css" /> <!-- Varsayılan tema -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="shortcut icon" href="./images/icons8-portfolio-64.png" type="image/x-icon" />
+  
+  <!-- ==== Style Selector ==== -->
+  <link rel="stylesheet" href="./css/skins/color-1.css" class="alternate-style" title="color-1" />
+  <link rel="stylesheet" href="./css/skins/color-2.css" class="alternate-style" title="color-2" />
+  <link rel="stylesheet" href="./css/skins/color-3.css" class="alternate-style" title="color-3" />
+  <link rel="stylesheet" href="./css/skins/color-4.css" class="alternate-style" title="color-4" />
+  <link rel="stylesheet" href="./css/skins/color-5.css" class="alternate-style" title="color-5" />
+  <link rel="stylesheet" href="./css/style-switcher.css" />
+</head>
+<body>
+  <!-- ==== Style Switcher Start ==== -->
+  <div class="style-switcher open">
+    <div class="style-switcher-toggler s-icon">
+      <em class="fas fa-cog fa-spin"></em>
+    </div>
+    <div class="day-night s-icon">
+      <em class="fas fa-moon"></em>
+    </div>
+    <h4>Tema Renkleri</h4>
+    <div class="colors">
+      <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+      <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+      <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+      <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+      <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+    </div>
+  </div>
+  <!-- ==== Style Switcher End ==== -->
     <!-- Typed.js Library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
 </head>
@@ -627,103 +648,102 @@ This fundamental knowledge strengthened my software development and problem solv
 
 
 
-
-
 <!-- ==== Contact Section Start ==== -->
 <section class="contact section" id="contact">
-    <div class="container">
-      <div class="row">
-        <div class="section-title padd-15">
-          <h2>Contact</h2>
-        </div>
-      </div>
-      <h3 class="contact-title padd-15">Any Questions?</h3>
-      <h4 class="contact-sub-title padd-15">I'M AVAILABLE</h4>
-      <div class="row">
-        <!-- ==== Contact info item Start ==== -->
-        <div class="contact-info-item padd-15">
-          <div class="icon"><em class="fa fa-phone"></em></div>
-          <h4>Call Me</h4>
-          <p>+90 536 600 65 62</p>
-        </div>
-        <div class="contact-info-item padd-15">
-          <div class="icon"><em class="fa fa-envelope"></em></div>
-          <h4>Email</h4>
-          <p><a href="mailto:serapkerem19@gmail.com">serapkerem19@gmail.com</a></p>
-        </div>
-        <div class="contact-info-item padd-15">
-          <div class="icon"><em class="fa-brands fa-github"></em></div>
-          <h4>GitHub</h4>
-          <p><a href="https://github.com/SERAP-KEREM" target="_blank">github.com/SERAP-KEREM</a></p>
-        </div>
-        <div class="contact-info-item padd-15">
-          <div class="icon"><em class="fa-brands fa-linkedin"></em></div>
-          <h4>LinkedIn</h4>
-          <p><a href="https://www.linkedin.com/in/serap-kerem-unity-game-developer/" target="_blank">linkedin.com/in/serap-kerem</a></p>
-        </div>
-        <!-- ==== Contact info item End ==== -->
-      </div>
-      <h3 class="contact-title padd-15">SEND ME AN EMAIL</h3>
-      <h4 class="contact-sub-title padd-15">I’D BE HAPPY TO RESPOND</h4>
-      <!-- ==== Contact Form ==== -->
-      <div class="row">
-        <div class="contact-form padd-15">
-          <form action="contact-form-handler.php" method="post">
-            <div class="row">
-              <div class="form-item col-6 padd-15">
-                <div class="form-group">
-                  <input
-                    type="text"
-                    name="name"
-                    class="form-control"
-                    placeholder="Name"
-                    required
-                  />
-                </div>
-              </div>
-              <div class="form-item col-6 padd-15">
-                <div class="form-group">
-                  <input
-                    type="email"
-                    name="email"
-                    class="form-control"
-                    placeholder="Email"
-                    required
-                  />
-                </div>
-              </div>
-              <div class="form-item col-12 padd-15">
-                <div class="form-group">
-                  <input
-                    type="text"
-                    name="subject"
-                    class="form-control"
-                    placeholder="Subject"
-                    required
-                  />
-                </div>
-              </div>
-              <div class="form-item col-12 padd-15">
-                <div class="form-group">
-                  <textarea
-                    name="message"
-                    class="form-control"
-                    placeholder="Message"
-                    rows="4"
-                    required
-                  ></textarea>
-                </div>
-              </div>
-              <div class="form-item col-12 padd-15">
-                <button type="submit" class="btn">Send Message</button>
-              </div>
-            </div>
-          </form>
-        </div>
+  <div class="container">
+    <div class="row">
+      <div class="section-title padd-15">
+        <h2>Contact</h2>
       </div>
     </div>
-  </section>
-  <!-- ==== Contact Section End ==== -->
+    <h3 class="contact-title padd-15">Any Questions?</h3>
+    <h4 class="contact-sub-title padd-15">I'M AVAILABLE</h4>
+    <div class="row">
+      <!-- ==== Contact info item Start ==== -->
+      <div class="contact-info-item padd-15">
+        <div class="icon"><em class="fa fa-phone"></em></div>
+        <h4>Call Me</h4>
+        <p>+90 536 600 65 62</p>
+      </div>
+      <div class="contact-info-item padd-15">
+        <div class="icon"><em class="fa fa-envelope"></em></div>
+        <h4>Email</h4>
+        <p><a href="mailto:serapkerem19@gmail.com">serapkerem19@gmail.com</a></p>
+      </div>
+      <div class="contact-info-item padd-15">
+        <div class="icon"><em class="fa-brands fa-github"></em></div>
+        <h4>GitHub</h4>
+        <p><a href="https://github.com/SERAP-KEREM" target="_blank">github.com/SERAP-KEREM</a></p>
+      </div>
+      <div class="contact-info-item padd-15">
+        <div class="icon"><em class="fa-brands fa-linkedin"></em></div>
+        <h4>LinkedIn</h4>
+        <p><a href="https://www.linkedin.com/in/serap-kerem-unity-game-developer/" target="_blank">linkedin.com/in/serap-kerem</a></p>
+      </div>
+      <!-- ==== Contact info item End ==== -->
+    </div>
+    <h3 class="contact-title padd-15">SEND ME AN EMAIL</h3>
+    <h4 class="contact-sub-title padd-15">I’D BE HAPPY TO RESPOND</h4>
+    <!-- ==== Contact Form ==== -->
+    <div class="row">
+      <div class="contact-form padd-15">
+        <form action="https://formspree.io/f/xdknlkap" method="POST">
+          <div class="row">
+            <div class="form-item col-6 padd-15">
+              <div class="form-group">
+                <input
+                  type="text"
+                  name="name"
+                  class="form-control"
+                  placeholder="Name"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-item col-6 padd-15">
+              <div class="form-group">
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control"
+                  placeholder="Email"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-item col-12 padd-15">
+              <div class="form-group">
+                <input
+                  type="text"
+                  name="subject"
+                  class="form-control"
+                  placeholder="Subject"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-item col-12 padd-15">
+              <div class="form-group">
+                <textarea
+                  name="message"
+                  class="form-control"
+                  placeholder="Message"
+                  rows="4"
+                  required
+                ></textarea>
+              </div>
+            </div>
+            <div class="form-item col-12 padd-15">
+              <button type="submit" class="btn">Send Message</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ==== Contact Section End ==== -->
+
   
 
 
@@ -731,37 +751,50 @@ This fundamental knowledge strengthened my software development and problem solv
 
 
 <!-- ==== Style Switcher Start ==== -->
- <!-- ==== Style Switcher Start ==== -->
- <div class="style-switcher">
-    <div class="style-switcher-toggler s-icon">
-      <em class="fas fa-cog fa-spin"></em>
-    </div>
-    <div class="day-night s-icon">
-      <em class="fas"></em>
-    </div>
-    <h4>Tema Cores</h4>
-    <div class="colors">
-      <span class="color-1" onclick="setActiveStyle('color-1')"></span>
-      <span class="color-2" onclick="setActiveStyle('color-2')"></span>
-      <span class="color-3" onclick="setActiveStyle('color-3')"></span>
-      <span class="color-4" onclick="setActiveStyle('color-4')"></span>
-      <span class="color-5" onclick="setActiveStyle('color-5')"></span>
-    </div>
+<div class="style-switcher open">
+  <div class="style-switcher-toggler s-icon">
+    <em class="fas fa-cog fa-spin"></em>
   </div>
-  <!-- ==== Style Switcher End ==== -->
+  <div class="day-night s-icon">
+    <em class="fas fa-moon"></em>
+  </div>
+  <h4>Tema Cores</h4>
+  <div class="colors">
+    <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+    <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+    <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+    <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+    <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+  </div>
+</div>
+<!-- ==== Style Switcher End ==== -->
 
+    <!-- ==== JS Files ==== -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./js/script.js"></script>
 
-    <!-- ==== JavaScript Files ==== -->
-    <script src="./js/script.js">
-    var options = {
-         strings: ["Unity Game Developer", " Freelancer"],
-         typeSpeed: 50,
-         backSpeed: 25,
-         backDelay: 1000,
-         startDelay: 500,
-         loop: true
-        };
-        var typed = new Typed(".typing", options);
-    </script>
+   <style type="text/css" data-typed-js-css="true">
+    .typed-cursor {
+        opacity: 1;
+    } 
+    .typed-cursor.typed-cursor--blink {
+        animation: typedjsBlink 0.7s infinite;
+        -webkit-animation: typedjsBlink 0.7s infinite;
+    }
+    @keyframes typedjsBlink {
+        50% { opacity: 0.0; }
+    }
+    @-webkit-keyframes typedjsBlink {
+        0% { opacity: 1; }
+        50% { opacity: 0.0; }
+        100% { opacity: 1; }
+    }
+</style>
+
+    </style>
+    <script src="./js/style-switcher.js"></script>
 </body>
 </html>

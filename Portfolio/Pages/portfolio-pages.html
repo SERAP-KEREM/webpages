@@ -5,6 +5,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Game Projects</title>
   <link rel="stylesheet" href="portfolio-pages.css">
+
+  <!-- ==== CSS Files ==== -->
+  <link id="theme-style" rel="stylesheet" href="./css/skins/color-1.css" /> <!-- Varsayılan tema -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="shortcut icon" href="./images/icons8-portfolio-64.png" type="image/x-icon" />
+  
+  <!-- ==== Style Selector ==== -->
+  <link rel="stylesheet" href="./css/skins/color-1.css" class="alternate-style" title="color-1" />
+  <link rel="stylesheet" href="./css/skins/color-2.css" class="alternate-style" title="color-2" />
+  <link rel="stylesheet" href="./css/skins/color-3.css" class="alternate-style" title="color-3" />
+  <link rel="stylesheet" href="./css/skins/color-4.css" class="alternate-style" title="color-4" />
+  <link rel="stylesheet" href="./css/skins/color-5.css" class="alternate-style" title="color-5" />
+  <link rel="stylesheet" href="./css/style-switcher.css" />
+</head>
+<body>
+  <!-- ==== Style Switcher Start ==== -->
+  <div class="style-switcher open">
+    <div class="style-switcher-toggler s-icon">
+      <em class="fas fa-cog fa-spin"></em>
+    </div>
+    <div class="day-night s-icon">
+      <em class="fas fa-moon"></em>
+    </div>
+    <h4>Tema Renkleri</h4>
+    <div class="colors">
+      <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+      <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+      <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+      <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+      <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+    </div>
+  </div>
+  <!-- ==== Style Switcher End ==== -->
+
+
+
+
+
+
+
+
+
+
   <style>
     .project-details {
       display: none; /* Varsayılan olarak tüm projeleri gizle */
@@ -396,8 +440,25 @@
     </main>
     <!-- ==== Main Content End ==== -->
   </div>
+ <!-- ==== Style Switcher Start ==== -->
+<div class="style-switcher open">
+  <div class="style-switcher-toggler s-icon">
+    <em class="fas fa-cog fa-spin"></em>
+  </div>
+  <div class="day-night s-icon">
+    <em class="fas fa-moon"></em>
+  </div>
+  <h4>Tema Cores</h4>
+  <div class="colors">
+    <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+    <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+    <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+    <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+    <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+  </div>
+</div>
   <!-- ==== JavaScript Files ==== -->
-  <!-- ==== JavaScript Files ==== -->
-  <script src="script.js"></script>
+  <script src="./js/script.js"></script>
+  <script src="./js/style-switcher.js"></script>
 </body>
 </html>
