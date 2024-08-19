@@ -244,17 +244,23 @@ box-sizing: border-box;
   max-width: 1200px; /* İsteğe bağlı olarak genişlik ayarı yapabilirsiniz */
   margin: 0 auto; /* Ortalamak için margin ayarı */
   padding: 20px;
+
  
 }
 
 .project-video {
   text-align: center;
   margin-bottom: 20px;
-}
+  
 
+}
+.project-video h1 {
+  color: var(--text-black-900);
+}
 .project-video video {
   width: 100%;
   max-width: 800px;
+  
 }
 
 .project-info {
@@ -270,6 +276,7 @@ box-sizing: border-box;
   font-size: 24px;
   color: var(--text-black-900);
   margin: 20px 0 10px;
+  
 }
 
 .project-info p {
@@ -285,36 +292,40 @@ box-sizing: border-box;
 
 .project-info ul li {
   margin-bottom: 10px;
+  color: var(--text-black-900);
 }
 
 /* Sayfa içeriği */
 
-/**/
-.content {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  padding: 0 15px;
-  transition: transform 0.5s ease-in-out; /* Sağdan sola kaydırma animasyonu */
-}
 
-@keyframes slideSection {
+@keyframes slideInFromRight {
   0% {
-    transform: translateX(100%); /* Sağdan görünüm */
+    transform: translateX(100%);
   }
   100% {
-    transform: translateX(0%); /* Orijinal konum */
+    transform: translateX(0%);
   }
 }
 
-.content.slide-in {
-  animation: slideSection 0.5s ease-in-out forwards;
+.content {
+  background-color: var(--bg-black-900);
+  min-height: 100vh;
+  display: block;
+  padding: 0 30px;
+  opacity: 1;
+  position: fixed;
+  left: 270px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: all 0.3s ease;
+  animation: slideInFromRight 1s ease;
 }
 
-.content .row {
-  display: flex;
-  align-items: start;
-}
+
 
 /* Varsayılan Buton */
 .aside .nav li a {

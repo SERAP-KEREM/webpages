@@ -35,8 +35,8 @@ function handleNavigation() {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
+ 
   handleNavigation();
-
   // Geri/ileri tuşlarına basıldığında sayfayı yeniden yüklemek yerine projeyi değiştir
   window.addEventListener('popstate', function() {
     handleNavigation();
