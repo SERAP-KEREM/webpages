@@ -742,7 +742,12 @@ h3.my-profession {
   font-size: 25px;
   color: var(--skin-color);
 }
-
+.contact .contact-info-item .icon .fab,
+.fab-solid,
+.fab-brands {
+  font-size: 25px;
+  color: var(--skin-color);
+}
 .contact .contact-info-item h4 {
   font-size: 18px;
   font-weight: 700;
