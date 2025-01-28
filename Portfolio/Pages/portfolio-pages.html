@@ -26,21 +26,12 @@
  
   <!-- ==== Style Switcher End ==== -->
 
-
-
-
-
-
-
-
-
-
   <style>
     .project-details {
-      display: none; /* Varsayılan olarak tüm projeleri gizle */
+      display: none; 
     }
     .project-details.active {
-      display: block; /* Sadece aktif olan projeyi göster */
+      display: block; 
     }
   </style>
 </head>
@@ -67,6 +58,8 @@
           <li><a href="#cs-clone" onclick="showProject('cs-clone')">CS Clone</a></li>
           <li><a href="#block-collection" onclick="showProject('block-collection')">Block Collection</a></li>
           <li><a href="#third-person-shooter" onclick="showProject('third-person-shooter')">Third Person Multiplayer Shooter</a></li>
+          <li><a href="#stickman-tank-rush" onclick="showProject('stickman-tank-rush')">Stickman Tank Rush</a></li>
+
           
        
         
@@ -465,6 +458,38 @@
   </div>
 </div>
 <!-- ==== Project 12 End ==== -->
+
+    <!-- ==== Project 13 Start ==== -->
+    <div id="stickman-tank-rush" class="project-details">
+
+      <div class="project-video padd-15">
+        <h1>Stickman Tank Rush 🚀</h1>
+        <div class="video-container padd-15">
+          <video controls>
+            <source src="Videos/18-StickmanTankRush.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    
+      <div class="project-info padd-15">
+        <h3>🔧 Technologies Used</h3>
+        <p>Unity, C#, DOTween, Array2D, ColorType, GridPathfinder, TriInspector, SerapkeremGameTools</p>
+    
+        <h3>💡 Description</h3>
+        <p>Stickman Tank Rush is a hyper-casual puzzle game featuring the following key elements:</p>
+        <ul>
+          <li><strong>Tank and Stickman Matching 🟩🔴🟦:</strong> Stickmen match with tanks of the same color, offering a puzzle-like gameplay experience. The color-matching mechanic adds a strategic layer.</li>
+          <li><strong>Grid-Based Movement System 🔲:</strong> Stickmen navigate the grid to reach tanks or holder areas. The grid layout is dynamically generated and managed.</li>
+          <li><strong>Dynamic Level Creation 🎮✨:</strong> Each level uses ScriptableObject and Array2DGrid to define the grid layout, tank positions, and other elements.</li>
+          <li><strong>Tank and Holder Areas 🟩🔲:</strong> Tanks are placed on grid cells, and filled holder areas result in a game over.</li>
+          <li><strong>Colorful, Simple Graphics 🌈:</strong> Visually appealing and easy-to-understand gameplay mechanics with a minimalist design.</li>
+          <li><strong>Seamless Animations:</strong> Implemented smooth transitions and movements using DOTween.</li>
+          <li><strong>Mobile Optimization:</strong> Optimized for Android devices, ensuring smooth performance and a responsive experience.</li>
+        </ul>
+      </div>
+    </div>
+  <!-- ==== Project 13 End ==== -->
 
       <!-- ==== Add More Projects As Needed ==== -->
     </main>
