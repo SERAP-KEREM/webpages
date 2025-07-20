@@ -178,33 +178,33 @@ ul {
 }
 
 .aside .logo {
+  width: 120px;
+  height: 120px;
   position: absolute;
-  top: 50px;
-  font-size: 30px;
-  text-transform: capitalize;
+  top: 30px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .aside .logo a {
-  color: var(--text-black-900);
-  font-weight: 700;
-  padding: 15px 20px;
-  font-size: 30px;
-  letter-spacing: 5px;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
   position: relative;
-}
-
-.aside .logo a span {
-  font-family: "Clicker Script", cursive;
-  font-size: 40px;
+  text-align: center;
 }
 
 .aside .logo a::before {
   content: "";
   position: absolute;
-  width: 20px;
-  height: 20px;
-  border-bottom: 5px solid var(--skin-color);
-  border-left: 5px solid var(--skin-color);
+  width: 22px;
+  height: 22px;
+  border-bottom: 4px solid var(--skin-color);
+  border-left: 4px solid var(--skin-color);
   bottom: 0;
   left: 0;
 }
@@ -212,12 +212,25 @@ ul {
 .aside .logo a::after {
   content: "";
   position: absolute;
-  width: 20px;
-  height: 20px;
-  border-top: 5px solid var(--skin-color);
-  border-right: 5px solid var(--skin-color);
+  width: 22px;
+  height: 22px;
+  border-top: 4px solid var(--skin-color);
+  border-right: 4px solid var(--skin-color);
   top: 0;
   right: 0;
+}
+
+.sidebar-logo-img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+}
+
+.aside .logo a span {
+  font-family: "Clicker Script", cursive;
+  font-size: 40px;
 }
 
 .aside .nav-toggler {
@@ -570,39 +583,6 @@ h3.my-profession {
   color: var(--text-black-700);
 }
 
-/* Skills */
-.skills {
-  
-  padding: 50px 0;
-}
-
-.skills .skill {
-  margin-bottom: 30px;
-}
-
-.skills .skill h2 {
-  font-size: 30px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-.skills .skill h2::after {
-  content: "";
-  height: 4px;
-  width: 25px;
-  background-color: var(--skin-color);
-  position: absolute;
-  bottom: -10px;
-  left: 0;
-}
-
-.skills .skill p {
-  color: var(--text-black-700);
-  line-height: 1.8;
-}
-
-
-
 /* Service */
 .service .container {
   padding-bottom: 40px;
@@ -667,8 +647,6 @@ h3.my-profession {
   line-height: 25px;
 }
 
-
-
 /* Portfolio */
 .portfolio .container {
   padding-bottom: 40px;
@@ -709,7 +687,6 @@ h3.my-profession {
   display: block;
 }
 
-
 /* Contact */
 .contact-title {
   color: var(--skin-color);
@@ -737,14 +714,7 @@ h3.my-profession {
 }
 
 .contact .contact-info-item .icon .fa,
-.fa-solid,
-.fa-brands {
-  font-size: 25px;
-  color: var(--skin-color);
-}
-.contact .contact-info-item .icon .fab,
-.fab-solid,
-.fab-brands {
+.contact .contact-info-item .icon .fab {
   font-size: 25px;
   color: var(--skin-color);
 }

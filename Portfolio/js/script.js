@@ -1,7 +1,18 @@
-// Projeyi gösteren işlev
+// Projeyi gösteren işlev - MainPage animasyonu ile
 function showProject(projectId) {
-  // Tüm projeleri gizle
+  // Tüm projeleri al
   var projects = document.querySelectorAll('.project-details');
+  var navLinks = document.querySelectorAll(".aside .nav li a");
+  
+  // Önceki aktif projeyi back-section yap
+  removeBackSection();
+  for (let i = 0; i < navLinks.length; i++) {
+    if (navLinks[i].classList.contains("active")) {
+      addBackSection(navLinks[i].getAttribute("href").split("#")[1]);
+    }
+  }
+  
+  // Tüm projeleri pasif yap
   projects.forEach(function(project) {
     project.classList.remove('active');
     
@@ -13,7 +24,12 @@ function showProject(projectId) {
     }
   });
 
-  // Seçili projeyi göster
+  // Tüm menü linklerini pasif yap
+  navLinks.forEach(function(link) {
+    link.classList.remove('active');
+  });
+
+  // Seçili projeyi aktif yap
   var selectedProject = document.getElementById(projectId);
   if (selectedProject) {
     selectedProject.classList.add('active');
@@ -28,16 +44,27 @@ function showProject(projectId) {
     }
   }
 
-  // Tüm butonlardan 'active' sınıfını kaldır ve ilgili butona 'active' sınıfı ekle
-  var navLinks = document.querySelectorAll(".aside .nav li a");
-  navLinks.forEach(function(link) {
-    link.classList.remove('active');
+  // İlgili menü linkini aktif yap
+  var targetLink = document.querySelector(`[href="#${projectId}"]`);
+  if (targetLink) {
+    targetLink.classList.add('active');
+  }
+}
 
-    // Tıklanan projenin id'si ile href değerini karşılaştır
-    if (link.getAttribute('href').includes(projectId)) {
-      link.classList.add('active');
-    }
-  });
+// Back section'ları temizle
+function removeBackSection() {
+  var projects = document.querySelectorAll('.project-details');
+  for (let i = 0; i < projects.length; i++) {
+    projects[i].classList.remove('back-section');
+  }
+}
+
+// Back section ekle
+function addBackSection(projectId) {
+  var project = document.getElementById(projectId);
+  if (project) {
+    project.classList.add('back-section');
+  }
 }
 
 // Sayfa yüklendiğinde ve geri/ileri tuşlarına basıldığında çalışacak işlevi tanımla

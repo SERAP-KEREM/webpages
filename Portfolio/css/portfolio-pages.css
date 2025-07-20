@@ -47,6 +47,7 @@ body.dark {
   border-right: 1px solid var(--bg-black-50);
   display: flex;
   justify-content: center;
+  align-items: center;
   z-index: 10;
   transition: all 0.3s ease;
 
@@ -60,11 +61,11 @@ box-sizing: border-box;
 
 /* Menü Alanı */
 .inner-sidebar {
-  padding: 50px 0px; /* Üst ve yan boşluklar */
+  padding: 50px 0px 0px 0px; /* Logonun yüksekliği kadar üst boşluk ekle */
   flex-grow: 1; /* Menü alanının büyümesini sağlar */
   overflow-y: auto; /* Dikey kaydırma çubuğu ekler */
 
-  margin-top: 40px; /* Logodan biraz boşluk bırakır */
+  margin-top: 0; /* Logodan biraz boşluk bırakır */
     box-sizing: border-box;
   min-height: 0; /* İçeriğin kaydırılabilir olmasını sağlar */
   
@@ -98,57 +99,37 @@ box-sizing: border-box;
   color: var(--skin-color);
 }
 .aside .logo {
-  position: absolute;
-  top: 50px;
-  font-size: 30px;
-  text-transform: capitalize;
-  padding: 30px 15px; /* Üst ve yan boşluklar */
-  background-color: var(--bg-black-100); /* Logonun arka plan rengi */
-  border-bottom: 1px solid var(--bg-black-50); /* Logoyu proje listesinden ayırmak için sınır */
-
-  
+  width: 120px;
+  height: 120px;
+  margin: 30px auto 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: static;
+  top: auto;
+  left: auto;
+  right: auto;
 }
 
 .aside .logo a {
-  color: var(--text-black-900);
-  font-weight: 700;
-  padding: 15px 20px;
-  font-size: 30px;
-  letter-spacing: 5px;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
   position: relative;
+  text-align: center;
+}
 
-
-
-  text-transform: capitalize;
+.sidebar-logo-img {
   display: block;
-  text-align: center; /* Logoyu ortalar */
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
 }
 
 .aside .logo a span {
   font-family: "Clicker Script", cursive;
   font-size: 40px;
-}
-
-.aside .logo a::before {
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  border-bottom: 5px solid var(--skin-color);
-  border-left: 5px solid var(--skin-color);
-  bottom: 0;
-  left: 0;
-}
-
-.aside .logo a::after {
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  border-top: 5px solid var(--skin-color);
-  border-right: 5px solid var(--skin-color);
-  top: 0;
-  right: 0;
 }
 
 .aside .nav-toggler {
@@ -240,12 +221,49 @@ box-sizing: border-box;
 
 
 /* Proje Detayları */
+/* Project Details - Slide Animation */
 .project-details {
-  max-width: 1200px; /* İsteğe bağlı olarak genişlik ayarı yapabilirsiniz */
-  margin: 0 auto; /* Ortalamak için margin ayarı */
-  padding: 20px;
+  background-color: var(--bg-black-900);
+  min-height: 100vh;
+  display: block;
+  padding: 0 30px;
+  opacity: 0;
+  position: fixed;
+  left: 270px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: all 0.3s ease;
+  visibility: hidden;
+}
 
- 
+.project-details.back-section {
+  z-index: 1;
+  opacity: 0.3;
+  visibility: visible;
+}
+
+.project-details.active {
+  z-index: 2;
+  opacity: 1;
+  visibility: visible;
+  animation: slideSection 1s ease;
+}
+
+@keyframes slideSection {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.project-details.hidden {
+  display: none !important;
 }
 
 .project-video {
@@ -307,23 +325,7 @@ box-sizing: border-box;
   }
 }
 
-.content {
-  background-color: var(--bg-black-900);
-  min-height: 100vh;
-  display: block;
-  padding: 0 30px;
-  opacity: 1;
-  position: fixed;
-  left: 270px;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 0;
-  overflow-y: auto;
-  overflow-x: hidden;
-  transition: all 0.3s ease;
-  animation: slideInFromRight 1s ease;
-}
+/* Content alanı artık gerekli değil, project-details kullanıyoruz */
 
 
 
@@ -384,6 +386,28 @@ box-sizing: border-box;
   width: 100%;
   height: auto;
   object-fit: cover; /* or contain */
+}
+
+.aside .logo a::before {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border-bottom: 4px solid var(--skin-color);
+  border-left: 4px solid var(--skin-color);
+  bottom: 0;
+  left: 0;
+}
+
+.aside .logo a::after {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border-top: 4px solid var(--skin-color);
+  border-right: 4px solid var(--skin-color);
+  top: 0;
+  right: 0;
 }
 
 

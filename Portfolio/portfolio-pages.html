@@ -6,35 +6,28 @@
   <title>My Game Projects</title>
 
   <!-- ==== CSS Files ==== -->
-  <link rel="stylesheet" href="portfolio-pages.css">
-  <link id="theme-style" rel="stylesheet" href="./css/skins/color-1.css"> <!-- Varsayılan tema -->
+  <link rel="stylesheet" href="css/portfolio-pages.css">
+  <link id="theme-style" rel="stylesheet" href="../MainPage/css/skins/color-1.css"> <!-- Varsayılan tema -->
 
   <!-- ==== FontAwesome Icons ==== -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   
   <!-- ==== Favicon ==== -->
-  <link rel="shortcut icon" href="./images/icons8-portfolio-64.png" type="image/x-icon">
+  <link rel="shortcut icon" href="../MainPage/images/icons8-portfolio-64.png" type="image/x-icon">
 
   <!-- ==== Style Selector (Tema Renkleri) ==== -->
-  <link rel="stylesheet" href="./css/skins/color-1.css" class="alternate-style" title="color-1">
-  <link rel="stylesheet" href="./css/skins/color-2.css" class="alternate-style" title="color-2">
-  <link rel="stylesheet" href="./css/skins/color-3.css" class="alternate-style" title="color-3">
-  <link rel="stylesheet" href="./css/skins/color-4.css" class="alternate-style" title="color-4">
-  <link rel="stylesheet" href="./css/skins/color-5.css" class="alternate-style" title="color-5">
-  <link rel="stylesheet" href="./css/style-switcher.css">
+  <link rel="stylesheet" href="../MainPage/css/skins/color-1.css" class="alternate-style" title="color-1">
+  <link rel="stylesheet" href="../MainPage/css/skins/color-2.css" class="alternate-style" title="color-2">
+  <link rel="stylesheet" href="../MainPage/css/skins/color-3.css" class="alternate-style" title="color-3">
+  <link rel="stylesheet" href="../MainPage/css/skins/color-4.css" class="alternate-style" title="color-4">
+  <link rel="stylesheet" href="../MainPage/css/skins/color-5.css" class="alternate-style" title="color-5">
+  <link rel="stylesheet" href="../MainPage/css/style-switcher.css">
 </head>
 <body>
 
   <!-- ====  Style Selector End ==== -->
 
-  <style>
-    .project-details {
-      display: none; 
-    }
-    .project-details.active {
-      display: block; 
-    }
-  </style>
+
 </head>
 <body>
 
@@ -44,7 +37,9 @@
     <!-- ==== Sidebar Start ==== -->
     <aside class="aside">
       <div class="logo">
-        <a href="#"><span>S</span>erap</a>
+        <a href="#">
+          <img src="../MainPage/images/WebLogo.png" alt="Web Logo" class="sidebar-logo-img" />
+        </a>
       </div>
 
       <div class="inner-sidebar padd-15">
@@ -69,9 +64,6 @@
       </div>
     </aside>
     <!-- ==== Sidebar End ==== -->
-
-<!-- ==== Main Content Start ==== -->
-<main class="content">
 
 <!-- ==== Project 1 Start ==== -->
 <div id="gta-clone" class="project-details">
@@ -298,12 +290,10 @@
   <div class="project-video padd-15 ">
       <h1>⚡ Speed Streak</h1>
   </div>
-  <div class="video-container">
-      <video controls style="width: 100%; max-width: 800px;">
-          <source src="Videos/13-Speed Streak.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-      </video>
-  </div>
+  <video controls style="width: 100%; max-width: 400px; display: block; margin: 0 auto;">
+  <source src="Videos/13-Speed Streak.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
   <div class="project-info padd-15">
       <h3>🛠 Technologies Used</h3>
       <p>Unity, C#, AdMob</p>
@@ -337,19 +327,15 @@
 
 <!-- ==== Project 8 Start ==== -->
 <div id="ball-runner" class="project-details">
-  
   <div class="project-video padd-15">
       <h1>🏀 Ball Runner</h1>
   </div>
-
-  <div class="video-container">
-      <video controls style="width: 100%; max-width: 800px;">
+      <video controls style="width: 100%; max-width: 400px; display: block; margin: 0 auto;">
           <source src="Videos/10-Ball Runner.mp4" type="video/mp4">
           Your browser does not support the video tag.
       </video>
-  </div>
+ <div class="project-info padd-15">
 
-  <div class="project-info">
       <h3>🛠 Technologies Used</h3>
       <p>Unity, C#, AdMob</p>
 
@@ -486,14 +472,11 @@
       <h1>🟦 Block Collection</h1>
   </div>
 
-  <div class="video-container">
-      <video controls style="width: 100%; max-width: 800px;">
+   <video controls style="width: 100%; max-width: 400px; display: block; margin: 0 auto;">
           <source src="Videos/11-Block Collection.mp4" type="video/mp4">
           Your browser does not support the video tag.
       </video>
-  </div>
-
-  <div class="project-info">
+  <div class="project-info padd-15">
       <h3>🛠 Technologies Used</h3>
       <p>Unity, C#, AdMob</p>
 
@@ -572,13 +555,10 @@
 <!-- ==== Project 12 End ==== -->
 <!-- ==== Project 13 Start ==== -->
 <div id="stickman-tank-rush" class="project-details">
-
   <div class="project-video padd-15">
     <h1>🚀 Stickman Tank Rush</h1>
-  </div>
+    <video controls style="width: 100%; max-width: 400px;">
 
-  <div class="video-container padd-15">
-    <video controls>
       <source src="Videos/18-StickmanTankRush.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
@@ -616,17 +596,11 @@
   </div>
 </div>
 <!-- ==== Project 13 End ==== -->
-
-
 <!-- ==== Project 14 Start ==== -->
 <div id="forest-hole-adventure" class="project-details">
-
   <div class="project-video padd-15">
     <h1>🌲 Forest Hole Adventure</h1>
-  </div>
-
-  <div class="video-container padd-15">
-    <video controls>
+    <video controls style="width: 100%; max-width: 400px;">
       <source src="Videos/19-ForestHoleAdventure.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
@@ -661,22 +635,15 @@
   </div>
 </div>
 <!-- ==== Project 14 End ==== -->
-
-
 <!-- ==== Project 15 Start ==== -->
 <div id="color-chains" class="project-details">
-
   <div class="project-video padd-15">
     <h1>🎮 ColorChains 🔗</h1>
-  </div>
-  
-  <div class="video-container padd-15">
-    <video controls>
+  <video controls style="width: 100%; max-width: 400px;">
       <source src="Videos/20-ColorChains.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
   </div>
-
   <div class="project-info padd-15">
     <h3>🔧 Technologies Used</h3>
     <p>Unity, C#, DOTween, TriInspector, SerapkeremGameTools, Physics & Hinge Joints</p>
@@ -703,10 +670,8 @@
 
   <div class="project-video padd-15">
     <h1>🎮 Tiny Merge: A Matching Adventure</h1>
-  </div>
-  
-  <div class="video-container padd-15">
-    <video controls>
+
+<video controls style="width: 100%; max-width: 800px;">
       <source src="Videos/21-TinyMerge.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
@@ -740,8 +705,6 @@
 
 
     <!-- ==== Add More Projects As Needed ==== -->
-  </main>
-  <!-- ==== Main Content End ==== -->
   </div>
   
  <!-- ==== Style Switcher Start ==== -->
@@ -762,7 +725,7 @@
   </div>
 </div>
   <!-- ==== JavaScript Files ==== -->
-  <script src="./js/script.js"></script>
-  <script src="./js/style-switcher.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/style-switcher.js"></script>
 </body>
 </html>
