@@ -60,6 +60,7 @@
           <li><a href="#forest-hole-adventure" onclick="showProject('forest-hole-adventure')">Forest Hole Adventure</a></li>
           <li><a href="#color-chains" onclick="showProject('color-chains')">Color Chains</a></li>
           <li><a href="#tiny-merge" onclick="showProject('tiny-merge')">Tiny Merge</a></li>
+          <li><a href="#stitch-n-loop" onclick="showProject('stitch-n-loop')">Stitch N Loop</a></li>
         </ul>
       </div>
     </aside>
@@ -703,6 +704,45 @@
 </div>
 <!-- ==== Project 16 End ==== -->
 
+
+<!-- ==== Project 17 Start ==== -->
+<div id="stitch-n-loop" class="project-details">
+
+  <div class="project-video padd-15">
+    <h1>🧵 Stitch N Loop</h1>
+    <video controls style="width: 100%; max-width: 800px;">
+      <source src="Portfolio/Videos/22-StitchNLoop.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <div class="project-info padd-15">
+    <h3>🛠 Technologies Used</h3>
+    <p>Unity, C#, DOTween, TriInspector, ScriptableObject, Texture2D, Spline/Rope, MaterialPropertyBlock, Haptics, VFX/SFX</p>
+
+    <h3>📜 Description</h3>
+    <p>I led the entire game development process for Stitch N Loop. I combined grid-based live tissue painting, reel/rope interactions, and the conveyor–holding flow into a single, fluid game loop to deliver a performance- and feel-focused experience.</p>
+
+    <h3>👤 Role</h3>
+    <ul>
+      <li>Core game architecture and gameplay systems</li>
+      <li>Grid painting infrastructure (Texture2D cell painting, base/normal map blending)</li>
+      <li>Reel flow: winding → holder reservation → unwinding → scene painting</li>
+      <li>Spline rope: throw, wave, collapse, runtime tracking</li>
+      <li>Performance/feedback: DOTween, MaterialPropertyBlock, haptics, VFX/SFX</li>
+      <li>ScriptableObject-based level/color data and clean Inspector (TriInspector)</li>
+    </ul>
+
+    <h3>🧩 Challenges & Solutions</h3>
+    <ul>
+      <li>Artifacts at cell boundaries: resolved with precise UV/clamp and GridCalculator</li>
+      <li>Rope wave stability: dynamic mid-point baseline + sine modulation</li>
+      <li>Fair paint distribution: assigning cells to the reel based on grid color density</li>
+    </ul>
+  </div>
+
+</div>
+<!-- ==== Project 17 End ==== -->
 
     <!-- ==== Add More Projects As Needed ==== -->
   </div>
