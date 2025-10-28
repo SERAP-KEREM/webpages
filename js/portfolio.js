@@ -71,12 +71,30 @@ function addBackSection(projectId) {
 function handleNavigation() {
   var currentHash = window.location.hash.substring(1);
 
-  if (currentHash) {
-    // Eğer hash varsa, o projeyi göster
+  // Yardımcı: ilk proje id'sini menüden ya da içerikten bul
+  function getFirstProjectId() {
+    var navLinks = document.querySelectorAll('.aside .nav li a');
+    if (navLinks && navLinks.length > 0) {
+      var href = navLinks[0].getAttribute('href');
+      if (href && href.startsWith('#')) {
+        return href.substring(1);
+      }
+    }
+    var firstProject = document.querySelector('.project-details');
+    if (firstProject && firstProject.id) {
+      return firstProject.id;
+    }
+    return null;
+  }
+
+  // Geçerli hash varsa ve proje mevcutsa onu göster, değilse ilkini göster
+  if (currentHash && document.getElementById(currentHash)) {
     showProject(currentHash);
   } else {
-    // Hash yoksa, varsayılan olarak ilk projeyi göster
-    showProject('gta-clone');
+    var firstId = getFirstProjectId();
+    if (firstId) {
+      showProject(firstId);
+    }
   }
 }
 
