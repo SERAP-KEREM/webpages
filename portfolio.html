@@ -44,6 +44,7 @@
 
       <div class="inner-sidebar padd-15">
         <ul class="nav">
+          <li><a href="#thread-roller" onclick="showProject('thread-roller')">Thread Roller</a></li>
           <li><a href="#stitch-n-loop" onclick="showProject('stitch-n-loop')">Stitch N Loop</a></li>
           <li><a href="#tiny-merge" onclick="showProject('tiny-merge')">Tiny Merge</a></li>
           <li><a href="#color-chains" onclick="showProject('color-chains')">Color Chains</a></li>
@@ -717,11 +718,11 @@
   </div>
 
   <div class="project-info padd-15">
+    <h3>🔗 Links</h3>
+    <p><a href="https://apps.apple.com/us/app/stich-n-loop/id6748954594" target="_blank" rel="noopener">App Store: Stitch N Loop</a></p>
     <h3>🛠 Technologies Used</h3>
     <p>Unity, C#, DOTween, TriInspector, ScriptableObject, Texture2D, Spline/Rope, MaterialPropertyBlock, Haptics, VFX/SFX</p>
 
-    <h3>🔗 Links</h3>
-    <p><a href="https://apps.apple.com/us/app/stich-n-loop/id6748954594" target="_blank" rel="noopener">App Store: Stitch N Loop</a></p>
 
     <h3>📜 Description</h3>
     <p>I led the entire game development process for Stitch N Loop. I combined grid-based live tissue painting, reel/rope interactions, and the conveyor–holding flow into a single, fluid game loop to deliver a performance- and feel-focused experience.</p>
@@ -746,6 +747,56 @@
 
 </div>
 <!-- ==== Project 17 End ==== -->
+
+  <!-- ==== Project 18 Start ==== -->
+  <div id="thread-roller" class="project-details">
+
+    <div class="project-video padd-15">
+      <h1>🧵 Thread Roller</h1>
+      <video controls style="width: 100%; max-width: 600px;">
+        <source src="Portfolio/Videos/23-ThreadRoller.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <div class="project-info padd-15">
+      <h3>🔗 Links</h3>
+      <p><a href="https://apps.apple.com/us/app/thread-roller/id6751907263" target="_blank" rel="noopener">App Store: Thread Roller</a></p>
+
+      <h3>🛠 Technologies Used</h3>
+      <p>Unity, C#, DOTween, TriInspector, ScriptableObject, Haptics, VFX/SFX</p>
+
+      <h3>📜 Gameplay (Detailed)</h3>
+      <p>You send objects from the shelves to the holder. When three objects of the same color accumulate in a holder, a “match” occurs — the objects are removed from the scene, and the shape beneath them gets painted. The goal is to clear all objects from the shelves and fully paint all shapes in the scene.</p>
+      <p>The gameplay loop revolves around sending the correct color in the right order to the holder and completing the level before all holders are filled.</p>
+
+      <h3>🎮 How to Play</h3>
+      <ul>
+        <li>Select an object and send it to the holder.</li>
+        <li>When three objects of the same color accumulate in a holder, if there’s a shape of the same color in the scene, they automatically match and are removed.</li>
+        <li>When a match occurs, the shape with the same color as the matched objects gets painted.</li>
+      </ul>
+
+      <h3>✨ Highlights</h3>
+      <ul>
+        <li>Fast and intuitive match-3 mechanics focused on the holder</li>
+        <li>Satisfying shelf clearing → shape painting feedback loop</li>
+        <li>Natural difficulty curve with increasing color variety and shelf layouts</li>
+        <li>Smooth tempo with clear visual and audio feedback</li>
+      </ul>
+
+      <h3>👤 My Role (Detailed)</h3>
+      <ul>
+        <li>Designed holder-focused three-match rules and ensured a smooth gameplay flow</li>
+        <li>Defined the shelf-clearing logic and the “paint all shapes” goal state</li>
+        <li>Enhanced game feel and polish with haptic feedback, VFX/SFX, and micro-animations rewarding correct actions</li>
+        <li>Adjusted level tempo and balance by scaling difficulty through color variety and shelf layouts</li>
+        <li>Designed and implemented the core gameplay mechanics</li>
+      </ul>
+    </div>
+
+  </div>
+  <!-- ==== Project 18 End ==== -->
 
     <!-- ==== Add More Projects As Needed ==== -->
   </div>
