@@ -44,6 +44,7 @@
 
       <div class="inner-sidebar padd-15">
         <ul class="nav">
+           <li><a href="#color-block-jam" onclick="showProject('color-block-jam')">Color Block Jam</a></li>
           <li><a href="#thread-roller" onclick="showProject('thread-roller')">Thread Roller</a></li>
           <li><a href="#stitch-n-loop" onclick="showProject('stitch-n-loop')">Stitch N Loop</a></li>
           <li><a href="#tiny-merge" onclick="showProject('tiny-merge')">Tiny Merge</a></li>
@@ -66,6 +67,54 @@
       </div>
     </aside>
     <!-- ==== Sidebar End ==== -->
+
+<!-- ==== Project 0 Start ==== -->
+<div id="color-block-jam" class="project-details">
+  <div class="project-video padd-15">
+    <h1>🎨🧩 ColorBlockJam</h1>
+    <video controls style="width: 100%; max-width: 800px;">
+      <source src="Portfolio/Videos/24-Color Block Jam.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <div class="project-info padd-15">
+       <h3>🔗 Links</h3>
+      <p><a href="https://github.com/SERAP-KEREM/ColorBlockJam" target="_blank" rel="noopener">GitHub: Color Block Jam</a></p>
+
+    <h3>🛠 Technologies Used</h3>
+    <p>Unity 6000.0.58f2, C#, DOTween, TriInspector, URP Simple Toon Shader, Quick Outline, SerapKeremGameKit</p>
+    <h3>🎮 About the Game</h3>
+    <p>Grid-based puzzle where you drag pre-placed pieces to matching frame color blocks. Correct matches trigger a custom dissolve exit and clear the board, opening space for new moves.</p>
+    <h3>🧩 Core Mechanics</h3>
+    <ul>
+      <li>Grid-based snap positioning and drag & drop controls</li>
+      <li>Color matching with dissolve exit animation on correct alignment</li>
+      <li>Obstacle detection prevents exits when paths are blocked</li>
+      <li>Auto-snap to nearest valid tile on release</li>
+    </ul>
+    <h3>🌈 Visual Features</h3>
+    <ul>
+      <li>Custom dissolve shader with directional and percentage-driven behavior</li>
+      <li>DOTween-powered smooth transitions and particle feedback</li>
+      <li>Dynamic material/color management via Material Property Blocks</li>
+    </ul>
+    <h3>🧠 Technical Features</h3>
+    <ul>
+      <li>Component-based, SOLID-aligned architecture</li>
+      <li>Object pooling for particles and effects</li>
+      <li>Robust state and level management systems</li>
+      <li>Integrated audio and haptic feedback</li>
+    </ul>
+    <h3>🎮 How to Play</h3>
+    <ul>
+      <li>Drag pieces toward matching frame color blocks</li>
+      <li>Ensure exit paths are clear before releasing</li>
+      <li>Pieces snap to the nearest valid tile on release</li>
+      <li>Clear all pieces to win the level</li>
+    </ul>
+  </div>
+</div>
+<!-- ==== Project 0 End ==== -->
 
 <!-- ==== Project 1 Start ==== -->
 <div id="gta-clone" class="project-details">
