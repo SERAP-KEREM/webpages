@@ -68,12 +68,12 @@
     </aside>
     <!-- ==== Sidebar End ==== -->
 
-<!-- ==== Project 0 Start ==== -->
+<!-- ==== Project 19 Start ==== -->
 <div id="color-block-jam" class="project-details">
   <div class="project-video padd-15">
     <h1>🎨🧩 ColorBlockJam</h1>
     <video controls style="width: 100%; max-width: 800px;">
-      <source src="Portfolio/Videos/24-Color Block Jam.mp4" type="video/mp4">
+      <source src="Portfolio/Videos/19-Color Block Jam.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
   </div>
@@ -114,14 +114,312 @@
     </ul>
   </div>
 </div>
-<!-- ==== Project 0 End ==== -->
+<!-- ==== Project 19 End ==== -->
 
-<!-- ==== Project 1 Start ==== -->
+ <!-- ==== Project 18 Start ==== -->
+  <div id="thread-roller" class="project-details">
+
+    <div class="project-video padd-15">
+      <h1>🧵 Thread Roller</h1>
+      <video controls style="width: 100%; max-width: 600px;">
+        <source src="Portfolio/Videos/18-ThreadRoller.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <div class="project-info padd-15">
+      <h3>🔗 Links</h3>
+      <p><a href="https://apps.apple.com/us/app/thread-roller/id6751907263" target="_blank" rel="noopener">App Store: Thread Roller</a></p>
+
+      <h3>🛠 Technologies Used</h3>
+      <p>Unity, C#, DOTween, TriInspector, ScriptableObject, Haptics, VFX/SFX</p>
+
+      <h3>📜 Gameplay (Detailed)</h3>
+      <p>You send objects from the shelves to the holder. When three objects of the same color accumulate in a holder, a “match” occurs — the objects are removed from the scene, and the shape beneath them gets painted. The goal is to clear all objects from the shelves and fully paint all shapes in the scene.</p>
+      <p>The gameplay loop revolves around sending the correct color in the right order to the holder and completing the level before all holders are filled.</p>
+
+      <h3>🎮 How to Play</h3>
+      <ul>
+        <li>Select an object and send it to the holder.</li>
+        <li>When three objects of the same color accumulate in a holder, if there’s a shape of the same color in the scene, they automatically match and are removed.</li>
+        <li>When a match occurs, the shape with the same color as the matched objects gets painted.</li>
+      </ul>
+
+      <h3>✨ Highlights</h3>
+      <ul>
+        <li>Fast and intuitive match-3 mechanics focused on the holder</li>
+        <li>Satisfying shelf clearing → shape painting feedback loop</li>
+        <li>Natural difficulty curve with increasing color variety and shelf layouts</li>
+        <li>Smooth tempo with clear visual and audio feedback</li>
+      </ul>
+
+      <h3>👤 My Role (Detailed)</h3>
+      <ul>
+        <li>Designed holder-focused three-match rules and ensured a smooth gameplay flow</li>
+        <li>Defined the shelf-clearing logic and the “paint all shapes” goal state</li>
+        <li>Enhanced game feel and polish with haptic feedback, VFX/SFX, and micro-animations rewarding correct actions</li>
+        <li>Adjusted level tempo and balance by scaling difficulty through color variety and shelf layouts</li>
+        <li>Designed and implemented the core gameplay mechanics</li>
+      </ul>
+    </div>
+
+  </div>
+  <!-- ==== Project 18 End ==== -->
+
+   <!-- ==== Project 17 Start ==== -->
+<div id="stitch-n-loop" class="project-details">
+
+  <div class="project-video padd-15">
+    <h1>🧵 Stitch N Loop</h1>
+    <video controls style="width: 100%; max-width: 800px;">
+      <source src="Portfolio/Videos/17-StitchNLoop.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <div class="project-info padd-15">
+    <h3>🔗 Links</h3>
+    <p><a href="https://apps.apple.com/us/app/stich-n-loop/id6748954594" target="_blank" rel="noopener">App Store: Stitch N Loop</a></p>
+    <h3>🛠 Technologies Used</h3>
+    <p>Unity, C#, DOTween, TriInspector, ScriptableObject, Texture2D, Spline/Rope, MaterialPropertyBlock, Haptics, VFX/SFX</p>
+
+
+    <h3>📜 Description</h3>
+    <p>I led the entire game development process for Stitch N Loop. I combined grid-based live tissue painting, reel/rope interactions, and the conveyor–holding flow into a single, fluid game loop to deliver a performance- and feel-focused experience.</p>
+
+    <h3>👤 Role</h3>
+    <ul>
+      <li>Core game architecture and gameplay systems</li>
+      <li>Grid painting infrastructure (Texture2D cell painting, base/normal map blending)</li>
+      <li>Reel flow: winding → holder reservation → unwinding → scene painting</li>
+      <li>Spline rope: throw, wave, collapse, runtime tracking</li>
+      <li>Performance/feedback: DOTween, MaterialPropertyBlock, haptics, VFX/SFX</li>
+      <li>ScriptableObject-based level/color data and clean Inspector (TriInspector)</li>
+    </ul>
+
+    <h3>🧩 Challenges & Solutions</h3>
+    <ul>
+      <li>Artifacts at cell boundaries: resolved with precise UV/clamp and GridCalculator</li>
+      <li>Rope wave stability: dynamic mid-point baseline + sine modulation</li>
+      <li>Fair paint distribution: assigning cells to the reel based on grid color density</li>
+    </ul>
+  </div>
+
+</div>
+<!-- ==== Project 17 End ==== -->
+
+ <!-- ==== Project 16 Start ==== -->
+<div id="tiny-merge" class="project-details">
+
+  <div class="project-video padd-15">
+    <h1>🎮 Tiny Merge: A Matching Adventure</h1>
+
+<video controls style="width: 100%; max-width: 800px;">
+      <source src="Portfolio/Videos/16-TinyMerge.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <div class="project-info padd-15">
+     <h3>🔗 Links</h3>
+      <p><a href="https://github.com/SERAP-KEREM/TinyMerge" target="_blank" rel="noopener">GitHub: Tiny Merge</a></p>
+
+    <h3>🔧 Technologies Used</h3>
+    <p>Unity, C#, DOTween, TriInspector, Zenject</p>
+
+    <h3>🧩 About the Game</h3>
+    <p>A <strong>fast-paced puzzle game</strong> where players must <strong>collect target objects</strong>, <strong>strategically manage tiles</strong>, and <strong>utilize powerful joker abilities</strong>—all within a <strong>race against time</strong>!  
+    Tiny Merge was also my <strong>first deep dive into Zenject</strong>, helping me master dependency management in Unity. 🚀</p>
+    
+    <ul>
+      <li>🎯 <strong>Target Object Collection:</strong> Gather specific objects to complete levels.</li>
+      <li>🔥 <strong>Match-3 Mechanic:</strong> Align three of the same type to clear them from the board.</li>
+      <li>⏳ <strong>Time-Limited Challenges:</strong> Beat the level <strong>before time runs out</strong>!</li>
+      <li>🚫 <strong>Tile-Based System:</strong> If the board fills up, <strong>it's game over</strong>.</li>
+      <li>🎲 <strong>Powerful Joker Abilities:</strong> Gain an advantage with these special moves:
+        <ul>
+          <li>💣 <strong>Destroy Triple Item:</strong> Instantly removes three identical items.</li>
+          <li>🌀 <strong>Item Shaker:</strong> Applies random forces to shake up the board.</li>
+          <li>♻️ <strong>Recycle Item:</strong> Reuse your last collected item.</li>
+          <li>⏸️ <strong>Freeze Time:</strong> Temporarily <strong>stop the clock</strong>!</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+<!-- ==== Project 16 End ==== -->
+
+<!-- ==== Project 15 Start ==== -->
+<div id="color-chains" class="project-details">
+  <div class="project-video padd-15">
+    <h1>🎮 Color Chains 🔗</h1>
+  <video controls style="width: 100%; max-width: 400px;">
+      <source src="Portfolio/Videos/15-ColorChains.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <div class="project-info padd-15">
+      <h3>🔗 Links</h3>
+      <p><a href="https://github.com/SERAP-KEREM/ColorChains" target="_blank" rel="noopener">GitHub: Color Chains</a></p>
+
+    <h3>🔧 Technologies Used</h3>
+    <p>Unity, C#, DOTween, TriInspector, SerapkeremGameTools, Physics & Hinge Joints</p>
+
+    <h3>🧠 About the Game</h3>
+    <p>A physics-based <strong>logic puzzle</strong> where players must strategically place <strong>keys</strong> into their <strong>matching sockets</strong>—all while managing chain constraints!  
+    But beware! <strong>Overstretching the chains will break them</strong>, and you only have a <strong>limited number of moves</strong> to succeed.</p>
+    
+    <ul>
+      <li>🔗 <strong>Chain Constraints:</strong> Keys are <strong>physically connected</strong> to chains, restricting their movement.</li>
+      <li>⚡ <strong>Break Mechanism:</strong> <strong>Chains will snap</strong> if stretched too far or subjected to excessive force.</li>
+      <li>🔑 <strong>Key & Socket Matching:</strong> Match each <strong>color-coded key</strong> to its correct <strong>socket</strong> to progress.</li>
+      <li>⏳ <strong>Limited Moves:</strong> Think carefully! You must solve the puzzle <strong>before running out of moves</strong>.</li>
+      <li>🎮 <strong>Intuitive Controls:</strong> <strong>Drag & drop</strong> keys using touch or mouse input for a smooth experience.</li>
+      <li>🎨 <strong>Engaging Visuals & Physics:</strong> <strong>Seamless animations</strong> and <strong>realistic physics</strong> make every move satisfying.</li>
+    </ul>
+  </div>
+</div>
+<!-- ==== Project 15 End ==== -->
+
+<!-- ==== Project 14 Start ==== -->
+<div id="forest-hole-adventure" class="project-details">
+  <div class="project-video padd-15">
+    <h1>🌲 Forest Hole Adventure</h1>
+    <video controls style="width: 100%; max-width: 400px;">
+      <source src="Portfolio/Videos/14-ForestHoleAdventure.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <div class="project-info padd-15">
+    <h3>🔗 Links</h3>
+      <p><a href="https://github.com/SERAP-KEREM/ForestHoleAdventure" target="_blank" rel="noopener">GitHub: Forest Hole Adventure</a></p>
+    <h3>🔧 Technologies Used</h3>
+    <p>Unity, C#, DOTween, ColorType, TriInspector, SerapkeremGameTools, Cinemachine, NavMesh</p>
+
+    <h3>🎯 Description</h3>
+    <p>A fun and dynamic game where you control a mysterious <strong>hole</strong> in a lush forest, swallowing objects and animals to grow bigger! Reach the <strong>target score</strong> before time runs out to clear the level.</p>
+    
+    <ul>
+      <li>🌀 <strong>Growth Mechanic:</strong>  
+          Absorb objects and animals to <strong>expand</strong> the hole—larger objects become available as you grow!</li>
+
+      <li>🎮 <strong>Smooth & Dynamic Controls:</strong>  
+          Fluid movement using <strong>joystick/keyboard</strong>, powered by <strong>NavMesh</strong> for realistic navigation.</li>
+
+      <li>🦌 <strong>Smart Animal AI:</strong>  
+          Forest animals react dynamically and <strong>try to escape</strong> when they sense the hole nearby.</li>
+
+      <li>👁️‍🗨️ <strong>Transparency Effect:</strong>  
+          Large objects <strong>turn transparent</strong> as the hole moves beneath them, enhancing visibility.</li>
+
+      <li>📝 <strong>Customizable Levels:</strong>  
+          Level settings like <strong>target scores, time limits, and spawn locations</strong> are fully customizable via <strong>ScriptableObjects</strong>.</li>
+
+      <li>🎥 <strong>Cinematic Camera:</strong>  
+          A <strong>Cinemachine</strong> virtual camera dynamically follows the hole, ensuring a smooth and immersive experience.</li>
+    </ul>
+  </div>
+</div>
+<!-- ==== Project 14 End ==== -->
+
+<!-- ==== Project 13 Start ==== -->
+<div id="stickman-tank-rush" class="project-details">
+  <div class="project-video padd-15">
+    <h1>🚀 Stickman Tank Rush</h1>
+    <video controls style="width: 100%; max-width: 400px;">
+
+      <source src="Portfolio/Videos/13-StickmanTankRush.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <div class="project-info padd-15">
+    <h3>🔗 Links</h3>
+      <p><a href="https://github.com/SERAP-KEREM/StickmanTankRush" target="_blank" rel="noopener">GitHub: Stickman Tank Rush</a></p>
+    <h3>🔧 Technologies Used</h3>
+    <p>Unity, C#, DOTween, Array2D, ColorType, GridPathfinder, TriInspector, SerapkeremGameTools</p>
+
+    <h3>🎯 Description</h3>
+    <p>A fast-paced, hyper-casual puzzle game where <strong>color-matching</strong> and <strong>strategic movement</strong> play a key role.</p>
+    
+    <ul>
+      <li>🟩🔴🟦 <strong>Color-Matching Mechanics:</strong>  
+          Stickmen must reach tanks of the <strong>same color</strong>, adding a puzzle-like strategy to the gameplay.</li>
+
+      <li>🔲 <strong>Grid-Based Navigation:</strong>  
+          Stickmen move across a <strong>dynamically generated grid</strong> to find their matching tanks.</li>
+
+      <li>🛠 <strong>Procedural Level Design:</strong>  
+          Each level is built using <strong>ScriptableObjects</strong> and <strong>Array2DGrid</strong>, defining dynamic layouts and tank placements.</li>
+
+      <li>⚠️ <strong>Game Over Conditions:</strong>  
+          If <strong>holder areas fill up</strong>, the game ends—challenging players to act quickly.</li>
+
+      <li>🌈 <strong>Minimalist & Vibrant Design:</strong>  
+          <strong>Simple yet visually engaging</strong> graphics enhance the hyper-casual experience.</li>
+
+      <li>🎞 <strong>Smooth Animations:</strong>  
+          Powered by <strong>DOTween</strong> for fluid and seamless transitions.</li>
+
+      <li>📱 <strong>Mobile-Optimized:</strong>  
+          Designed for <strong>Android devices</strong>, ensuring smooth performance and intuitive controls.</li>
+    </ul>
+  </div>
+</div>
+<!-- ==== Project 13 End ==== -->
+
+<!-- ==== Project 12 Start ==== -->
+<div id="third-person-shooter" class="project-details">
+
+  <div class="project-video padd-15">
+    <h1>🎯 Third-Person Multiplayer Shooter</h1>
+    <video controls style="width: 100%; max-width: 800px;">
+      <source src="Portfolio/Videos/12-Third Person Multiplayer Shooter.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <div class="project-info padd-15">
+    <h3>🛠 Technologies Used</h3>
+    <p>Unity, C#, Unity Netcode</p>
+
+    <h3>🚀 About the Game</h3>
+    <p>An <strong>action-packed third-person multiplayer shooter</strong> built with <strong>Unity Netcode</strong>, offering <strong>real-time combat, tactical depth, and immersive gameplay</strong>. Engage in dynamic battles, manage resources wisely, and master different weapons to dominate the battlefield! 🎮🔥</p>
+    
+    <ul>
+      <li>🌍 <strong>Seamless Multiplayer Battles:</strong>  
+          Real-time PvP action with <strong>smooth networking powered by Unity Netcode</strong>.</li>
+
+      <li>🔭 <strong>Strategic Third-Person Camera:</strong>  
+          Gain a <strong>tactical advantage</strong> with a <strong>wide battlefield view</strong>.</li>
+
+      <li>🔫 <strong>Adaptive Weapon System:</strong>  
+          <strong>Switch weapons on the fly</strong> to adapt to different combat situations.</li>
+
+      <li>💊 <strong>Resource Management:</strong>  
+          <strong>Limited ammo and health packs</strong> demand smart survival strategies.</li>
+
+      <li>🎒 <strong>Loot & Inventory System:</strong>  
+          <strong>Search and collect</strong> weapons, ammo, and health packs to stay in the fight.</li>
+
+      <li>👤 <strong>Custom Character Selection:</strong>  
+          Choose from <strong>diverse characters</strong> while ensuring balanced gameplay.</li>
+
+      <li>🤖 <strong>Dynamic AI Interactions:</strong>  
+          AI-driven NPCs add <strong>extra challenges and unpredictable encounters</strong>.</li>
+    </ul>
+  </div>
+
+</div>
+<!-- ==== Project 12 End ==== -->
+
+<!-- ==== Project 11 Start ==== -->
 <div id="gta-clone" class="project-details">
   <div class="project-video padd-15">
     <h1>🚔 GTA Clone</h1>
     <video controls style="width: 100%; max-width: 800px;">
-      <source src="Portfolio/Videos/8-GTA V Clone.mp4" type="video/mp4">
+      <source src="Portfolio/Videos/11-GTA V Clone.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
   </div>
@@ -158,14 +456,14 @@
     </ul>
   </div>
 </div>
-<!-- ==== Project 1 End ==== -->
+<!-- ==== Project 11 End ==== -->
 
-<!-- ==== Project 2 Start ==== -->
+<!-- ==== Project 10 Start ==== -->
 <div id="city-car-racing" class="project-details">
   <div class="project-video padd-15">
     <h1>🏎️ City Car Racing 3D</h1>
     <video controls style="width: 100%; max-width: 800px;">
-      <source src="Portfolio/Videos/9-City Car Racing 3D Game.mp4" type="video/mp4">
+      <source src="Portfolio/Videos/10-City Car Racing 3D Game.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
   </div>
@@ -206,85 +504,40 @@
     </ul>
   </div>
 </div>
-<!-- ==== Project 2 End ==== -->
+<!-- ==== Project 10 End ==== -->
 
-<!-- ==== Project 3 Start ==== -->
-<div id="parkour-game" class="project-details">
+ <!-- ==== Project 9 Start ==== -->
+<div id="block-breaking" class="project-details">
   <div class="project-video padd-15">
-    <h1>🤸 Parkour Game</h1>
+    <h1>🎮 Block Breaking</h1>
     <video controls style="width: 100%; max-width: 800px;">
-      <source src="Portfolio/Videos/1-ParkourGame.mp4" type="video/mp4">
+      <source src="Portfolio/Videos/9-Block Breaking.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
   </div>
-
   <div class="project-info">
     <h3>🛠 Technologies Used</h3>
     <p>Unity, C#</p>
 
     <h3>📜 Description</h3>
-    <p>This project is a parkour-based game with various levels and challenges. Below are some of the key features:</p>
-
+    <p>This project is a classic block-breaking game with the following key features:</p>
     <ul>
-      <li>🎮 <strong>Platform Setup and Character Controls:</strong> 
-        Implemented smooth player controls to ensure responsive interaction with the character.</li>
-
-      <li>⚔️ <strong>Enemy and Attack System:</strong> 
-        Introduced enemies and an attack system to increase the game's challenge and excitement.</li>
-
-      <li>❤️ <strong>Health Indicator and Collectibles:</strong> 
-        Developed a health indicator for the player character and incorporated collectible items that allow players to earn points, adding strategic depth to the gameplay.</li>
-
-      <li>🌍 <strong>Levels:</strong> 
-        Designed multiple levels with unique challenges and tasks to keep players engaged and progressing.</li>
-
-      <li>🔐 <strong>User Login and Registration System:</strong> 
-        Implemented a user login and registration system.</li>
+      <li>⚽ <strong>Ball and Physics:</strong> Added a ball to the game, programmed to bounce off surfaces using realistic physics, enhancing the gameplay experience.</li>
+      <li>🎮 <strong>Paddle System:</strong> Implemented a movable paddle that players can control to direct the ball left, right, or straight, ensuring precise movement.</li>
+      <li>🧱 <strong>Blocks:</strong> Designed blocks with varying difficulty levels, including bonus blocks that grant extra lives, adding strategic depth to the game.</li>
+      <li>📈 <strong>Levels:</strong> Created multiple levels with unique block arrangements and increasing difficulty to keep players engaged.</li>
+      <li>🏆 <strong>Win/Lose Conditions:</strong> Developed a system to handle win and lose conditions, such as dropping the ball or breaking all blocks in a level, providing clear objectives and feedback.</li>
     </ul>
   </div>
 </div>
-<!-- ==== Project 3 End ==== -->
+<!-- ==== Project 9 End ==== -->
 
-<!-- ==== Project 4 Start ==== -->
-<div id="zombie-game" class="project-details">
-  <div class="project-video padd-15">
-    <h1>🧟‍♂️ Zombie Game</h1>
-    <video controls style="width: 100%; max-width: 800px;">
-      <source src="Portfolio/Videos/5-Zombie Game.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </div>
-
-  <div class="project-info">
-    <h3>🛠 Technologies Used</h3>
-    <p>Unity, C#</p>
-
-    <h3>📜 Description</h3>
-    <p>This project is a zombie-themed survival game with the following key features:</p>
-    
-    <ul>
-      <li>🔫 <strong>Character and Weapon System:</strong> 
-        Implemented a personalized weapon system for the player character and ensured smooth controls for accurate shooting. Developed an ammunition system for the weapon, including a visual indicator to show the player's current ammo count.</li>
-
-      <li>🧟 <strong>Zombie Enemies and Attack System:</strong> 
-        Added zombie enemies to the map and implemented an attack system for them to engage the player character. Implemented a dynamic spawn system for zombies, allowing for adjustable frequency and intensity of zombie spawns throughout the game.</li>
-
-      <li>❤️ <strong>Character Health System:</strong> 
-        Designed a health system for the character, featuring a health bar to display the player's current health status.</li>
-
-      <li>🎁 <strong>Reward System:</strong> 
-        Introduced a reward system where defeating zombies can yield random rewards such as ammo boxes or health boosts for the character.</li>
-    </ul>
-  </div>
-</div>
-<!-- ==== Project 4 End ==== -->
-
-<!-- ==== Project 5 Start ==== -->
+<!-- ==== Project 8 Start ==== -->
 <div id="endless-runner" class="project-details">
   <div class="project-video padd-15">
     <h1>🏃‍♂️ Endless Runner</h1>
     <video controls style="width: 100%; max-width: 800px;">
-      <source src="Portfolio/Videos/3-Endless Game.mp4" type="video/mp4">
+      <source src="Portfolio/Videos/8-Endless Game.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
   </div>
@@ -308,41 +561,98 @@
     </ul>
   </div>
 </div>
-<!-- ==== Project 5 End ==== -->
+<!-- ==== Project 8 End ==== -->
 
- <!-- ==== Project 6 Start ==== -->
-<div id="block-breaking" class="project-details">
+<!-- ==== Project 7 Start ==== -->
+<div id="ball-runner" class="project-details">
   <div class="project-video padd-15">
-    <h1>🎮 Block Breaking</h1>
-    <video controls style="width: 100%; max-width: 800px;">
-      <source src="Portfolio/Videos/7-Block Breaking.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
+      <h1>🏀 Ball Runner</h1>
   </div>
-  <div class="project-info">
-    <h3>🛠 Technologies Used</h3>
-    <p>Unity, C#</p>
+      <video controls style="width: 100%; max-width: 400px; display: block; margin: 0 auto;">
+          <source src="Portfolio/Videos/7-Ball Runner.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+      </video>
+ <div class="project-info padd-15">
 
-    <h3>📜 Description</h3>
-    <p>This project is a classic block-breaking game with the following key features:</p>
-    <ul>
-      <li>⚽ <strong>Ball and Physics:</strong> Added a ball to the game, programmed to bounce off surfaces using realistic physics, enhancing the gameplay experience.</li>
-      <li>🎮 <strong>Paddle System:</strong> Implemented a movable paddle that players can control to direct the ball left, right, or straight, ensuring precise movement.</li>
-      <li>🧱 <strong>Blocks:</strong> Designed blocks with varying difficulty levels, including bonus blocks that grant extra lives, adding strategic depth to the game.</li>
-      <li>📈 <strong>Levels:</strong> Created multiple levels with unique block arrangements and increasing difficulty to keep players engaged.</li>
-      <li>🏆 <strong>Win/Lose Conditions:</strong> Developed a system to handle win and lose conditions, such as dropping the ball or breaking all blocks in a level, providing clear objectives and feedback.</li>
-    </ul>
+      <h3>🛠 Technologies Used</h3>
+      <p>Unity, C#, AdMob</p>
+
+      <h3>📜 Description</h3>
+      <p>This game involves a character running on top of balls and navigating through obstacles. Key features include:</p>
+
+      <ul>
+          <li>⚽ <strong>Character and Ball System:</strong> 
+              The character dynamically rises or lowers based on the number of balls collected or lost.</li>
+
+          <li>🚧 <strong>Obstacle System:</strong> 
+              Various obstacles randomly appear in front of the player, increasing the challenge.</li>
+
+          <li>🔥 <strong>Endless Levels with Increasing Difficulty:</strong> 
+              The game progressively becomes more challenging, ensuring engaging and dynamic gameplay.</li>
+
+          <li>🎮 <strong>Gameplay Mechanics:</strong> 
+              Players must skillfully navigate obstacles, aiming to finish with the highest number of coins and balls.</li>
+
+          <li>📱 <strong>AdMob Integration:</strong> 
+              In-game advertisements are integrated to enhance revenue through AdMob.</li>
+      </ul>
   </div>
+
+</div>
+<!-- ==== Project 7 End ==== -->
+
+<!-- ==== Project 6 Start ==== -->
+<div id="block-collection" class="project-details">
+
+  <div class="project-video padd-15">
+      <h1>🟦 Block Collection</h1>
+  </div>
+
+   <video controls style="width: 100%; max-width: 400px; display: block; margin: 0 auto;">
+          <source src="Portfolio/Videos/6-Block Collection.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+      </video>
+  <div class="project-info padd-15">
+      <h3>🛠 Technologies Used</h3>
+      <p>Unity, C#, AdMob</p>
+
+      <h3>📜 Description</h3>
+      <p>A visually minimalist and engaging block collection game with dynamic mechanics and increasing difficulty.</p>
+
+      <ul>
+          <li>🎮 <strong>Core Gameplay Mechanics:</strong> 
+              Collect blocks while navigating through obstacles. Designed for smooth controls and engaging mechanics.</li>
+
+          <li>⚡ <strong>Power-ups & Upgrades:</strong> 
+              Strategic power-ups enhance gameplay and provide exciting advantages.</li>
+
+          <li>🎨 <strong>Minimalist Graphics & UI:</strong> 
+              Clean visual style with a user-friendly interface for a seamless experience.</li>
+
+          <li>🕳 <strong>Dynamic Block Falling Mechanic:</strong> 
+              Implemented a custom shader-driven mechanic where blocks fall when they touch holes.</li>
+
+          <li>📈 <strong>Endless Level Progression:</strong> 
+              Infinite levels with increasing difficulty, ensuring long-term engagement.</li>
+
+          <li>📱 <strong>Mobile Optimization:</strong> 
+              Optimized for Android devices to ensure smooth gameplay.</li>
+
+          <li>💰 <strong>AdMob Integration:</strong> 
+              Rewarded video ads and banner ads for monetization without disrupting the player experience.</li>
+      </ul>
+  </div>
+
 </div>
 <!-- ==== Project 6 End ==== -->
 
-<!-- ==== Project 7 Start ==== -->
+<!-- ==== Project 5 Start ==== -->
 <div id="speed-streak" class="project-details">
   <div class="project-video padd-15 ">
       <h1>⚡ Speed Streak</h1>
   </div>
   <video controls style="width: 100%; max-width: 400px; display: block; margin: 0 auto;">
-  <source src="Portfolio/Videos/13-Speed Streak.mp4" type="video/mp4">
+  <source src="Portfolio/Videos/5-Speed Streak.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
   <div class="project-info padd-15">
@@ -374,101 +684,15 @@
   </div>
 
 </div>
-<!-- ==== Project 7 End ==== -->
+<!-- ==== Project 5 End ==== -->
 
-<!-- ==== Project 8 Start ==== -->
-<div id="ball-runner" class="project-details">
-  <div class="project-video padd-15">
-      <h1>🏀 Ball Runner</h1>
-  </div>
-      <video controls style="width: 100%; max-width: 400px; display: block; margin: 0 auto;">
-          <source src="Portfolio/Videos/10-Ball Runner.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-      </video>
- <div class="project-info padd-15">
-
-      <h3>🛠 Technologies Used</h3>
-      <p>Unity, C#, AdMob</p>
-
-      <h3>📜 Description</h3>
-      <p>This game involves a character running on top of balls and navigating through obstacles. Key features include:</p>
-
-      <ul>
-          <li>⚽ <strong>Character and Ball System:</strong> 
-              The character dynamically rises or lowers based on the number of balls collected or lost.</li>
-
-          <li>🚧 <strong>Obstacle System:</strong> 
-              Various obstacles randomly appear in front of the player, increasing the challenge.</li>
-
-          <li>🔥 <strong>Endless Levels with Increasing Difficulty:</strong> 
-              The game progressively becomes more challenging, ensuring engaging and dynamic gameplay.</li>
-
-          <li>🎮 <strong>Gameplay Mechanics:</strong> 
-              Players must skillfully navigate obstacles, aiming to finish with the highest number of coins and balls.</li>
-
-          <li>📱 <strong>AdMob Integration:</strong> 
-              In-game advertisements are integrated to enhance revenue through AdMob.</li>
-      </ul>
-  </div>
-
-</div>
-<!-- ==== Project 8 End ==== -->
-
-<!-- ==== Project 9 Start ==== -->
-<div id="adrenaline-dash" class="project-details">
-  
-  <div class="project-video padd-15">
-      <h1>⚡ Adrenaline Dash</h1>
-      <video controls style="width: 100%; max-width: 800px;">
-          <source src="Portfolio/Videos/14-Adrenaline Dash.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-      </video>
-  </div>
-
-  <div class="project-info">
-      <h3>🛠 Technologies Used</h3>
-      <p>Unity, C#</p>
-
-      <h3>📜 Description</h3>
-      <p>A dynamic runner game where the main character collects additional characters and overcomes obstacles. Key features include:</p>
-
-      <ul>
-          <li>👥 <strong>Character Collection Mechanic:</strong> 
-              The main character gathers additional characters from the road, increasing the group's size.</li>
-
-          <li>🚀 <strong>Character Movement & Object Pooling:</strong> 
-              Smooth movement system with object pooling for efficient memory management.</li>
-
-          <li>⚠️ <strong>Obstacles & Mechanics:</strong> 
-              Various challenging obstacles that can cause characters to be lost.</li>
-
-          <li>🔢 <strong>Numeric Blocks:</strong> 
-              Special blocks that alter the group size based on their values.</li>
-
-          <li>🎯 <strong>Point System, Main Menu & Level Selection:</strong> 
-              A structured point system with an intuitive main menu and level selection.</li>
-
-          <li>🆚 <strong>Enemy Objects at Level End:</strong> 
-              Final battles against enemy objects at the end of each level.</li>
-
-          <li>🛒 <strong>Item Shop:</strong> 
-              A shop where players can purchase items using earned points.</li>
-
-          <li>🌍 <strong>Multilingual Support:</strong> 
-              Multiple language options for a broader audience.</li>
-      </ul>
-  </div>
-
-</div>
-<!-- ==== Project 9 End ==== -->
-
-<!-- ==== Project 10 Start ==== -->
+<!-- ==== Project 4 Start ==== -->
 <div id="cs-clone" class="project-details">
   
   <div class="project-video padd-15">
       <h1>🔫 CS Clone</h1>
       <video controls style="width: 100%; max-width: 800px;">
-          <source src="Portfolio/Videos/15-Cs Clone.mp4" type="video/mp4">
+          <source src="Portfolio/Videos/4-Cs Clone.mp4" type="video/mp4">
           Your browser does not support the video tag.
       </video>
   </div>
@@ -514,351 +738,126 @@
   </div>
 
 </div>
-<!-- ==== Project 10 End ==== -->
+<!-- ==== Project 4 End ==== -->
 
-<!-- ==== Project 11 Start ==== -->
-<div id="block-collection" class="project-details">
-
+<!-- ==== Project 3 Start ==== -->
+<div id="parkour-game" class="project-details">
   <div class="project-video padd-15">
-      <h1>🟦 Block Collection</h1>
-  </div>
-
-   <video controls style="width: 100%; max-width: 400px; display: block; margin: 0 auto;">
-          <source src="Portfolio/Videos/11-Block Collection.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-      </video>
-  <div class="project-info padd-15">
-      <h3>🛠 Technologies Used</h3>
-      <p>Unity, C#, AdMob</p>
-
-      <h3>📜 Description</h3>
-      <p>A visually minimalist and engaging block collection game with dynamic mechanics and increasing difficulty.</p>
-
-      <ul>
-          <li>🎮 <strong>Core Gameplay Mechanics:</strong> 
-              Collect blocks while navigating through obstacles. Designed for smooth controls and engaging mechanics.</li>
-
-          <li>⚡ <strong>Power-ups & Upgrades:</strong> 
-              Strategic power-ups enhance gameplay and provide exciting advantages.</li>
-
-          <li>🎨 <strong>Minimalist Graphics & UI:</strong> 
-              Clean visual style with a user-friendly interface for a seamless experience.</li>
-
-          <li>🕳 <strong>Dynamic Block Falling Mechanic:</strong> 
-              Implemented a custom shader-driven mechanic where blocks fall when they touch holes.</li>
-
-          <li>📈 <strong>Endless Level Progression:</strong> 
-              Infinite levels with increasing difficulty, ensuring long-term engagement.</li>
-
-          <li>📱 <strong>Mobile Optimization:</strong> 
-              Optimized for Android devices to ensure smooth gameplay.</li>
-
-          <li>💰 <strong>AdMob Integration:</strong> 
-              Rewarded video ads and banner ads for monetization without disrupting the player experience.</li>
-      </ul>
-  </div>
-
-</div>
-<!-- ==== Project 11 End ==== -->
-<!-- ==== Project 12 Start ==== -->
-<div id="third-person-shooter" class="project-details">
-
-  <div class="project-video padd-15">
-    <h1>🎯 Third-Person Multiplayer Shooter</h1>
+    <h1>🤸 Parkour Game</h1>
     <video controls style="width: 100%; max-width: 800px;">
-      <source src="Portfolio/Videos/17-Third Person Multiplayer Shooter.mp4" type="video/mp4">
+      <source src="Portfolio/Videos/3-ParkourGame.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
   </div>
 
-  <div class="project-info padd-15">
+  <div class="project-info">
     <h3>🛠 Technologies Used</h3>
-    <p>Unity, C#, Unity Netcode</p>
-
-    <h3>🚀 About the Game</h3>
-    <p>An <strong>action-packed third-person multiplayer shooter</strong> built with <strong>Unity Netcode</strong>, offering <strong>real-time combat, tactical depth, and immersive gameplay</strong>. Engage in dynamic battles, manage resources wisely, and master different weapons to dominate the battlefield! 🎮🔥</p>
-    
-    <ul>
-      <li>🌍 <strong>Seamless Multiplayer Battles:</strong>  
-          Real-time PvP action with <strong>smooth networking powered by Unity Netcode</strong>.</li>
-
-      <li>🔭 <strong>Strategic Third-Person Camera:</strong>  
-          Gain a <strong>tactical advantage</strong> with a <strong>wide battlefield view</strong>.</li>
-
-      <li>🔫 <strong>Adaptive Weapon System:</strong>  
-          <strong>Switch weapons on the fly</strong> to adapt to different combat situations.</li>
-
-      <li>💊 <strong>Resource Management:</strong>  
-          <strong>Limited ammo and health packs</strong> demand smart survival strategies.</li>
-
-      <li>🎒 <strong>Loot & Inventory System:</strong>  
-          <strong>Search and collect</strong> weapons, ammo, and health packs to stay in the fight.</li>
-
-      <li>👤 <strong>Custom Character Selection:</strong>  
-          Choose from <strong>diverse characters</strong> while ensuring balanced gameplay.</li>
-
-      <li>🤖 <strong>Dynamic AI Interactions:</strong>  
-          AI-driven NPCs add <strong>extra challenges and unpredictable encounters</strong>.</li>
-    </ul>
-  </div>
-
-</div>
-<!-- ==== Project 12 End ==== -->
-<!-- ==== Project 13 Start ==== -->
-<div id="stickman-tank-rush" class="project-details">
-  <div class="project-video padd-15">
-    <h1>🚀 Stickman Tank Rush</h1>
-    <video controls style="width: 100%; max-width: 400px;">
-
-      <source src="Portfolio/Videos/18-StickmanTankRush.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </div>
-
-  <div class="project-info padd-15">
-    <h3>🔗 Links</h3>
-      <p><a href="https://github.com/SERAP-KEREM/StickmanTankRush" target="_blank" rel="noopener">GitHub: Stickman Tank Rush</a></p>
-    <h3>🔧 Technologies Used</h3>
-    <p>Unity, C#, DOTween, Array2D, ColorType, GridPathfinder, TriInspector, SerapkeremGameTools</p>
-
-    <h3>🎯 Description</h3>
-    <p>A fast-paced, hyper-casual puzzle game where <strong>color-matching</strong> and <strong>strategic movement</strong> play a key role.</p>
-    
-    <ul>
-      <li>🟩🔴🟦 <strong>Color-Matching Mechanics:</strong>  
-          Stickmen must reach tanks of the <strong>same color</strong>, adding a puzzle-like strategy to the gameplay.</li>
-
-      <li>🔲 <strong>Grid-Based Navigation:</strong>  
-          Stickmen move across a <strong>dynamically generated grid</strong> to find their matching tanks.</li>
-
-      <li>🛠 <strong>Procedural Level Design:</strong>  
-          Each level is built using <strong>ScriptableObjects</strong> and <strong>Array2DGrid</strong>, defining dynamic layouts and tank placements.</li>
-
-      <li>⚠️ <strong>Game Over Conditions:</strong>  
-          If <strong>holder areas fill up</strong>, the game ends—challenging players to act quickly.</li>
-
-      <li>🌈 <strong>Minimalist & Vibrant Design:</strong>  
-          <strong>Simple yet visually engaging</strong> graphics enhance the hyper-casual experience.</li>
-
-      <li>🎞 <strong>Smooth Animations:</strong>  
-          Powered by <strong>DOTween</strong> for fluid and seamless transitions.</li>
-
-      <li>📱 <strong>Mobile-Optimized:</strong>  
-          Designed for <strong>Android devices</strong>, ensuring smooth performance and intuitive controls.</li>
-    </ul>
-  </div>
-</div>
-<!-- ==== Project 13 End ==== -->
-<!-- ==== Project 14 Start ==== -->
-<div id="forest-hole-adventure" class="project-details">
-  <div class="project-video padd-15">
-    <h1>🌲 Forest Hole Adventure</h1>
-    <video controls style="width: 100%; max-width: 400px;">
-      <source src="Portfolio/Videos/19-ForestHoleAdventure.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </div>
-
-  <div class="project-info padd-15">
-    <h3>🔗 Links</h3>
-      <p><a href="https://github.com/SERAP-KEREM/ForestHoleAdventure" target="_blank" rel="noopener">GitHub: Forest Hole Adventure</a></p>
-    <h3>🔧 Technologies Used</h3>
-    <p>Unity, C#, DOTween, ColorType, TriInspector, SerapkeremGameTools, Cinemachine, NavMesh</p>
-
-    <h3>🎯 Description</h3>
-    <p>A fun and dynamic game where you control a mysterious <strong>hole</strong> in a lush forest, swallowing objects and animals to grow bigger! Reach the <strong>target score</strong> before time runs out to clear the level.</p>
-    
-    <ul>
-      <li>🌀 <strong>Growth Mechanic:</strong>  
-          Absorb objects and animals to <strong>expand</strong> the hole—larger objects become available as you grow!</li>
-
-      <li>🎮 <strong>Smooth & Dynamic Controls:</strong>  
-          Fluid movement using <strong>joystick/keyboard</strong>, powered by <strong>NavMesh</strong> for realistic navigation.</li>
-
-      <li>🦌 <strong>Smart Animal AI:</strong>  
-          Forest animals react dynamically and <strong>try to escape</strong> when they sense the hole nearby.</li>
-
-      <li>👁️‍🗨️ <strong>Transparency Effect:</strong>  
-          Large objects <strong>turn transparent</strong> as the hole moves beneath them, enhancing visibility.</li>
-
-      <li>📝 <strong>Customizable Levels:</strong>  
-          Level settings like <strong>target scores, time limits, and spawn locations</strong> are fully customizable via <strong>ScriptableObjects</strong>.</li>
-
-      <li>🎥 <strong>Cinematic Camera:</strong>  
-          A <strong>Cinemachine</strong> virtual camera dynamically follows the hole, ensuring a smooth and immersive experience.</li>
-    </ul>
-  </div>
-</div>
-<!-- ==== Project 14 End ==== -->
-<!-- ==== Project 15 Start ==== -->
-<div id="color-chains" class="project-details">
-  <div class="project-video padd-15">
-    <h1>🎮 Color Chains 🔗</h1>
-  <video controls style="width: 100%; max-width: 400px;">
-      <source src="Portfolio/Videos/20-ColorChains.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </div>
-  <div class="project-info padd-15">
-      <h3>🔗 Links</h3>
-      <p><a href="https://github.com/SERAP-KEREM/ColorChains" target="_blank" rel="noopener">GitHub: Color Chains</a></p>
-
-    <h3>🔧 Technologies Used</h3>
-    <p>Unity, C#, DOTween, TriInspector, SerapkeremGameTools, Physics & Hinge Joints</p>
-
-    <h3>🧠 About the Game</h3>
-    <p>A physics-based <strong>logic puzzle</strong> where players must strategically place <strong>keys</strong> into their <strong>matching sockets</strong>—all while managing chain constraints!  
-    But beware! <strong>Overstretching the chains will break them</strong>, and you only have a <strong>limited number of moves</strong> to succeed.</p>
-    
-    <ul>
-      <li>🔗 <strong>Chain Constraints:</strong> Keys are <strong>physically connected</strong> to chains, restricting their movement.</li>
-      <li>⚡ <strong>Break Mechanism:</strong> <strong>Chains will snap</strong> if stretched too far or subjected to excessive force.</li>
-      <li>🔑 <strong>Key & Socket Matching:</strong> Match each <strong>color-coded key</strong> to its correct <strong>socket</strong> to progress.</li>
-      <li>⏳ <strong>Limited Moves:</strong> Think carefully! You must solve the puzzle <strong>before running out of moves</strong>.</li>
-      <li>🎮 <strong>Intuitive Controls:</strong> <strong>Drag & drop</strong> keys using touch or mouse input for a smooth experience.</li>
-      <li>🎨 <strong>Engaging Visuals & Physics:</strong> <strong>Seamless animations</strong> and <strong>realistic physics</strong> make every move satisfying.</li>
-    </ul>
-  </div>
-</div>
-<!-- ==== Project 15 End ==== -->
-
-
-<!-- ==== Project 16 Start ==== -->
-<div id="tiny-merge" class="project-details">
-
-  <div class="project-video padd-15">
-    <h1>🎮 Tiny Merge: A Matching Adventure</h1>
-
-<video controls style="width: 100%; max-width: 800px;">
-      <source src="Portfolio/Videos/21-TinyMerge.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </div>
-
-  <div class="project-info padd-15">
-     <h3>🔗 Links</h3>
-      <p><a href="https://github.com/SERAP-KEREM/TinyMerge" target="_blank" rel="noopener">GitHub: Tiny Merge</a></p>
-
-    <h3>🔧 Technologies Used</h3>
-    <p>Unity, C#, DOTween, TriInspector, Zenject</p>
-
-    <h3>🧩 About the Game</h3>
-    <p>A <strong>fast-paced puzzle game</strong> where players must <strong>collect target objects</strong>, <strong>strategically manage tiles</strong>, and <strong>utilize powerful joker abilities</strong>—all within a <strong>race against time</strong>!  
-    Tiny Merge was also my <strong>first deep dive into Zenject</strong>, helping me master dependency management in Unity. 🚀</p>
-    
-    <ul>
-      <li>🎯 <strong>Target Object Collection:</strong> Gather specific objects to complete levels.</li>
-      <li>🔥 <strong>Match-3 Mechanic:</strong> Align three of the same type to clear them from the board.</li>
-      <li>⏳ <strong>Time-Limited Challenges:</strong> Beat the level <strong>before time runs out</strong>!</li>
-      <li>🚫 <strong>Tile-Based System:</strong> If the board fills up, <strong>it's game over</strong>.</li>
-      <li>🎲 <strong>Powerful Joker Abilities:</strong> Gain an advantage with these special moves:
-        <ul>
-          <li>💣 <strong>Destroy Triple Item:</strong> Instantly removes three identical items.</li>
-          <li>🌀 <strong>Item Shaker:</strong> Applies random forces to shake up the board.</li>
-          <li>♻️ <strong>Recycle Item:</strong> Reuse your last collected item.</li>
-          <li>⏸️ <strong>Freeze Time:</strong> Temporarily <strong>stop the clock</strong>!</li>
-        </ul>
-      </li>
-    </ul>
-  </div>
-</div>
-<!-- ==== Project 16 End ==== -->
-
-
-<!-- ==== Project 17 Start ==== -->
-<div id="stitch-n-loop" class="project-details">
-
-  <div class="project-video padd-15">
-    <h1>🧵 Stitch N Loop</h1>
-    <video controls style="width: 100%; max-width: 800px;">
-      <source src="Portfolio/Videos/22-StitchNLoop.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </div>
-
-  <div class="project-info padd-15">
-    <h3>🔗 Links</h3>
-    <p><a href="https://apps.apple.com/us/app/stich-n-loop/id6748954594" target="_blank" rel="noopener">App Store: Stitch N Loop</a></p>
-    <h3>🛠 Technologies Used</h3>
-    <p>Unity, C#, DOTween, TriInspector, ScriptableObject, Texture2D, Spline/Rope, MaterialPropertyBlock, Haptics, VFX/SFX</p>
-
+    <p>Unity, C#</p>
 
     <h3>📜 Description</h3>
-    <p>I led the entire game development process for Stitch N Loop. I combined grid-based live tissue painting, reel/rope interactions, and the conveyor–holding flow into a single, fluid game loop to deliver a performance- and feel-focused experience.</p>
+    <p>This project is a parkour-based game with various levels and challenges. Below are some of the key features:</p>
 
-    <h3>👤 Role</h3>
     <ul>
-      <li>Core game architecture and gameplay systems</li>
-      <li>Grid painting infrastructure (Texture2D cell painting, base/normal map blending)</li>
-      <li>Reel flow: winding → holder reservation → unwinding → scene painting</li>
-      <li>Spline rope: throw, wave, collapse, runtime tracking</li>
-      <li>Performance/feedback: DOTween, MaterialPropertyBlock, haptics, VFX/SFX</li>
-      <li>ScriptableObject-based level/color data and clean Inspector (TriInspector)</li>
-    </ul>
+      <li>🎮 <strong>Platform Setup and Character Controls:</strong> 
+        Implemented smooth player controls to ensure responsive interaction with the character.</li>
 
-    <h3>🧩 Challenges & Solutions</h3>
-    <ul>
-      <li>Artifacts at cell boundaries: resolved with precise UV/clamp and GridCalculator</li>
-      <li>Rope wave stability: dynamic mid-point baseline + sine modulation</li>
-      <li>Fair paint distribution: assigning cells to the reel based on grid color density</li>
+      <li>⚔️ <strong>Enemy and Attack System:</strong> 
+        Introduced enemies and an attack system to increase the game's challenge and excitement.</li>
+
+      <li>❤️ <strong>Health Indicator and Collectibles:</strong> 
+        Developed a health indicator for the player character and incorporated collectible items that allow players to earn points, adding strategic depth to the gameplay.</li>
+
+      <li>🌍 <strong>Levels:</strong> 
+        Designed multiple levels with unique challenges and tasks to keep players engaged and progressing.</li>
+
+      <li>🔐 <strong>User Login and Registration System:</strong> 
+        Implemented a user login and registration system.</li>
     </ul>
+  </div>
+</div>
+<!-- ==== Project 3 End ==== -->
+
+<!-- ==== Project 2 Start ==== -->
+<div id="adrenaline-dash" class="project-details">
+  
+  <div class="project-video padd-15">
+      <h1>⚡ Adrenaline Dash</h1>
+      <video controls style="width: 100%; max-width: 800px;">
+          <source src="Portfolio/Videos/2-Adrenaline Dash.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+      </video>
+  </div>
+
+  <div class="project-info">
+      <h3>🛠 Technologies Used</h3>
+      <p>Unity, C#</p>
+
+      <h3>📜 Description</h3>
+      <p>A dynamic runner game where the main character collects additional characters and overcomes obstacles. Key features include:</p>
+
+      <ul>
+          <li>👥 <strong>Character Collection Mechanic:</strong> 
+              The main character gathers additional characters from the road, increasing the group's size.</li>
+
+          <li>🚀 <strong>Character Movement & Object Pooling:</strong> 
+              Smooth movement system with object pooling for efficient memory management.</li>
+
+          <li>⚠️ <strong>Obstacles & Mechanics:</strong> 
+              Various challenging obstacles that can cause characters to be lost.</li>
+
+          <li>🔢 <strong>Numeric Blocks:</strong> 
+              Special blocks that alter the group size based on their values.</li>
+
+          <li>🎯 <strong>Point System, Main Menu & Level Selection:</strong> 
+              A structured point system with an intuitive main menu and level selection.</li>
+
+          <li>🆚 <strong>Enemy Objects at Level End:</strong> 
+              Final battles against enemy objects at the end of each level.</li>
+
+          <li>🛒 <strong>Item Shop:</strong> 
+              A shop where players can purchase items using earned points.</li>
+
+          <li>🌍 <strong>Multilingual Support:</strong> 
+              Multiple language options for a broader audience.</li>
+      </ul>
   </div>
 
 </div>
-<!-- ==== Project 17 End ==== -->
-
-  <!-- ==== Project 18 Start ==== -->
-  <div id="thread-roller" class="project-details">
-
-    <div class="project-video padd-15">
-      <h1>🧵 Thread Roller</h1>
-      <video controls style="width: 100%; max-width: 600px;">
-        <source src="Portfolio/Videos/23-ThreadRoller.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-    </div>
-
-    <div class="project-info padd-15">
-      <h3>🔗 Links</h3>
-      <p><a href="https://apps.apple.com/us/app/thread-roller/id6751907263" target="_blank" rel="noopener">App Store: Thread Roller</a></p>
-
-      <h3>🛠 Technologies Used</h3>
-      <p>Unity, C#, DOTween, TriInspector, ScriptableObject, Haptics, VFX/SFX</p>
-
-      <h3>📜 Gameplay (Detailed)</h3>
-      <p>You send objects from the shelves to the holder. When three objects of the same color accumulate in a holder, a “match” occurs — the objects are removed from the scene, and the shape beneath them gets painted. The goal is to clear all objects from the shelves and fully paint all shapes in the scene.</p>
-      <p>The gameplay loop revolves around sending the correct color in the right order to the holder and completing the level before all holders are filled.</p>
-
-      <h3>🎮 How to Play</h3>
-      <ul>
-        <li>Select an object and send it to the holder.</li>
-        <li>When three objects of the same color accumulate in a holder, if there’s a shape of the same color in the scene, they automatically match and are removed.</li>
-        <li>When a match occurs, the shape with the same color as the matched objects gets painted.</li>
-      </ul>
-
-      <h3>✨ Highlights</h3>
-      <ul>
-        <li>Fast and intuitive match-3 mechanics focused on the holder</li>
-        <li>Satisfying shelf clearing → shape painting feedback loop</li>
-        <li>Natural difficulty curve with increasing color variety and shelf layouts</li>
-        <li>Smooth tempo with clear visual and audio feedback</li>
-      </ul>
-
-      <h3>👤 My Role (Detailed)</h3>
-      <ul>
-        <li>Designed holder-focused three-match rules and ensured a smooth gameplay flow</li>
-        <li>Defined the shelf-clearing logic and the “paint all shapes” goal state</li>
-        <li>Enhanced game feel and polish with haptic feedback, VFX/SFX, and micro-animations rewarding correct actions</li>
-        <li>Adjusted level tempo and balance by scaling difficulty through color variety and shelf layouts</li>
-        <li>Designed and implemented the core gameplay mechanics</li>
-      </ul>
-    </div>
-
+<!-- ==== Project 2 End ==== -->
+<!-- ==== Project 1 Start ==== -->
+<div id="zombie-game" class="project-details">
+  <div class="project-video padd-15">
+    <h1>🧟‍♂️ Zombie Game</h1>
+    <video controls style="width: 100%; max-width: 800px;">
+      <source src="Portfolio/Videos/1-Zombie Game.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
   </div>
-  <!-- ==== Project 18 End ==== -->
 
-    <!-- ==== Add More Projects As Needed ==== -->
+  <div class="project-info">
+    <h3>🛠 Technologies Used</h3>
+    <p>Unity, C#</p>
+
+    <h3>📜 Description</h3>
+    <p>This project is a zombie-themed survival game with the following key features:</p>
+    
+    <ul>
+      <li>🔫 <strong>Character and Weapon System:</strong> 
+        Implemented a personalized weapon system for the player character and ensured smooth controls for accurate shooting. Developed an ammunition system for the weapon, including a visual indicator to show the player's current ammo count.</li>
+
+      <li>🧟 <strong>Zombie Enemies and Attack System:</strong> 
+        Added zombie enemies to the map and implemented an attack system for them to engage the player character. Implemented a dynamic spawn system for zombies, allowing for adjustable frequency and intensity of zombie spawns throughout the game.</li>
+
+      <li>❤️ <strong>Character Health System:</strong> 
+        Designed a health system for the character, featuring a health bar to display the player's current health status.</li>
+
+      <li>🎁 <strong>Reward System:</strong> 
+        Introduced a reward system where defeating zombies can yield random rewards such as ammo boxes or health boosts for the character.</li>
+    </ul>
   </div>
+</div>
+<!-- ==== Project 1 End ==== -->
+ </div>
   
  <!-- ==== Style Switcher Start ==== -->
 <div class="style-switcher ">
