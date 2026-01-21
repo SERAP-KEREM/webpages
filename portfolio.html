@@ -44,6 +44,7 @@
 
       <div class="inner-sidebar padd-15">
         <ul class="nav">
+           <li><a href="#arrows" onclick="showProject('arrows')">Arrows</a></li>
            <li><a href="#color-block-jam" onclick="showProject('color-block-jam')">Color Block Jam</a></li>
           <li><a href="#thread-roller" onclick="showProject('thread-roller')">Thread Roller</a></li>
           <li><a href="#stitch-n-loop" onclick="showProject('stitch-n-loop')">Stitch N Loop</a></li>
@@ -68,6 +69,66 @@
     </aside>
     <!-- ==== Sidebar End ==== -->
 
+<!-- ==== Project 20 Start ==== -->
+<div id="arrows" class="project-details">
+  <div class="project-video padd-15">
+    <h1>🎯➡️ Arrows</h1>
+    <video controls style="width: 100%; max-width: 800px;">
+        <source src="Portfolio/Videos/20-Arrows.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <div class="project-info padd-15">
+    <h3>🔗 Links</h3>
+    <p><a href="https://github.com/SERAP-KEREM/Arrows" target="_blank">GitHub: Arrows</a></p>
+
+    <h3>🛠 Technologies Used</h3>
+    <p>Unity 6000.0.58f2, C#, DOTween, TriInspector, Universal Render Pipeline (URP), TextMeshPro, Line Renderer, SerapKeremGameKit</p>
+
+    <h3>🎮 About the Game</h3>
+    <p>Arrows is a challenging line-based puzzle game where players strategically activate animated lines to clear the playfield. Avoid collisions, manage your lives, and complete all levels. Developed with Unity, the game features smooth animations, intelligent collision detection, and a robust, scalable architecture.</p>
+
+    <h3>🧩 Core Mechanics</h3>
+    <ul>
+      <li>Interactive Line System: Activate precise, smooth forward animations by clicking on lines.</li>
+      <li>Smart Collision Detection: Advanced head-to-line collision system.</li>
+      <li>Lives Management: Start with 5 lives and track remaining lives via heart-based UI.</li>
+      <li>Win / Lose Conditions: Clear all lines to win; lose all lives to fail the level.</li>
+      <li>Level Progression: 10 carefully designed levels with increasing difficulty.</li>
+    </ul>
+
+    <h3>🌈 Visual Features</h3>
+    <ul>
+      <li>Smooth Animations: DOTween-powered forward and backward line animations.</li>
+      <li>Dynamic Color Feedback: Lines change color on collision to clearly indicate errors.</li>
+      <li>Automatic Camera Adjustment: Camera automatically frames all lines per level.</li>
+      <li>Line Head Tracking: A visual “head” object follows the line tip for better visibility.</li>
+      <li>Material System: Dynamic material and color management for visual feedback.</li>
+    </ul>
+
+    <h3>🧠 Technical Features</h3>
+    <ul>
+      <li>Component-Based Architecture: Modular, SOLID-compliant design with clear separation of responsibilities.</li>
+      <li>Vector3 Array Pooling: Zero-allocation animation system optimized for performance.</li>
+      <li>State Management: Centralized game state control via a StateManager.</li>
+      <li>Audio & Haptics: Sound effects and tactile feedback support.</li>
+      <li>Level System: Flexible prefab-based level loading and flow control.</li>
+      <li>Explicit Initialization: Clear, deterministic initialization order instead of Unity’s implicit lifecycle.</li>
+    </ul>
+
+    <h3>🎮 How to Play</h3>
+    <ul>
+      <li>Click to Activate: Click on any line to activate it.</li>
+      <li>Timing Strategy: Lines move at a constant speed — timing is critical.</li>
+      <li>Avoid Collisions: Each collision costs one life.</li>
+      <li>Line Completion: Lines erase from the tail as they move and are removed after completion.</li>
+      <li>Manage Your Lives: You start with 5 lives.</li>
+      <li>Win Condition: Complete all lines without collisions.</li>
+      <li>Lose Condition: Lose all 5 lives.</li>
+    </ul>
+  </div>
+</div>
+<!-- ==== Project 20 End ==== -->
 
 <!-- ==== Project 19 Start ==== -->
 <div id="color-block-jam" class="project-details">
@@ -847,7 +908,7 @@
 <!-- ==== Project 1 End ==== -->
 
   </div>
-  
+
  <!-- ==== Style Switcher Start ==== -->
 <div class="style-switcher ">
   <div class="style-switcher-toggler s-icon">
