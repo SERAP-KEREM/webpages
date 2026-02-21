@@ -44,6 +44,7 @@
 
       <div class="inner-sidebar padd-15">
         <ul class="nav">
+           <li><a href="#hole-people" onclick="showProject('hole-people')">Hole People</a></li>
            <li><a href="#arrows" onclick="showProject('arrows')">Arrows</a></li>
            <li><a href="#color-block-jam" onclick="showProject('color-block-jam')">Color Block Jam</a></li>
           <li><a href="#thread-roller" onclick="showProject('thread-roller')">Thread Roller</a></li>
@@ -68,6 +69,66 @@
       </div>
     </aside>
     <!-- ==== Sidebar End ==== -->
+
+<!-- ==== Project 21 Start ==== -->
+<div id="hole-people" class="project-details">
+  <div class="project-video padd-15">
+    <h1>🎮 Hole People</h1>
+    <video controls style="width: 100%; max-width: 800px;">
+        <source src="Portfolio/Videos/21-HolePeople.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <div class="project-info padd-15">
+    <h3>🔗 Links</h3>
+    <p><a href="https://github.com/SERAP-KEREM/HolePeople" target="_blank" rel="noopener">GitHub: Hole People</a></p>
+
+    <h3>🛠 Technologies Used</h3>
+    <p>Unity 6000.0.58f2, C#, PrimeTween, TriInspector, Universal Render Pipeline (URP) 17.0.4, UI Particle (ParticleEffectForUGUI), TextMeshPro, SerapKeremGameKit</p>
+
+    <h3>🎮 About the Game</h3>
+    <p>Hole People is a challenging grid-based puzzle game where players strategically move same-color stickmen across a grid into matching holes, then route them to MatrixHoles or Holders. Built with Unity, featuring PrimeTween polish, batch transfer systems, and the SerapKeremGameKit architecture.</p>
+
+    <h3>🧩 Core Mechanics</h3>
+    <ul>
+      <li>Grid-Based Movement: Stickmen move on a tile grid with BFS pathfinding toward the selected hole.</li>
+      <li>Color Matching: Only stickmen whose color matches the tapped hole are sent.</li>
+      <li>Run & Jump: PrimeTween-powered run-to-jump arc into the hole, with optional jump particle.</li>
+      <li>Batch Transfer: Arrived stickmen are collected per hole and routed in batches (MatrixHole capacity or Holder).</li>
+      <li>Spaceship VFX: Transfer to Holder or MatrixHole is visualized with a reusable spaceship (reference-counted).</li>
+      <li>MatrixHole Lanes: Capacity-based lanes; when full, hole closes and the next one shifts forward.</li>
+    </ul>
+
+    <h3>🌈 Visual Features</h3>
+    <ul>
+      <li>Particle Effects: Pooled jump/feedback particles (key-based).</li>
+      <li>Smooth Animations: PrimeTween for movement, jumps, fill ring, and UI.</li>
+      <li>Material System: Dynamic colors via MaterialPropertyBlock (stickmen and holes).</li>
+      <li>Fill Ring UI: Radial fill around MatrixHoles showing capacity (event + LateUpdate fallback).</li>
+      <li>Audio & Haptics: Key-based registry for selection and feedback.</li>
+    </ul>
+
+    <h3>🧠 Technical Features</h3>
+    <ul>
+      <li>Component-Based Architecture: Modular, clear separation (Stickman, Hole, MatrixHole, Holder, TransferService).</li>
+      <li>Object Pooling: Particles, audio, pathfinding collections (Queue/Dictionary/HashSet).</li>
+      <li>State Management: StateManager + state-driven UI (HUD, Win, Fail, Settings, Retry).</li>
+      <li>Audio & Haptics: SerapKeremGameKit integration.</li>
+      <li>Level System: Prefab-based level loading (Level_01–Level_10), LevelManager + Level init pipeline.</li>
+      <li>BFS Pathfinding: Efficient grid-based pathfinding system with pooling.</li>
+    </ul>
+
+    <h3>🎮 How to Play</h3>
+    <ul>
+      <li>Select a Hole: Tap a grid hole. All same-color stickmen on the grid that can pathfind to it will move.</li>
+      <li>Match Colors: Only stickmen whose color matches the hole's color are sent.</li>
+      <li>Watch the Transfer: Stickmen run, jump into the hole, then are batched and sent to MatrixHoles (if capacity) or Holders.</li>
+      <li>Fill MatrixHoles: MatrixHoles have a capacity; when full, they close and the next hole in the lane advances.</li>
+      <li>Win: Close all required MatrixHole lanes. Lose: If stickmen cannot be placed (no holder space, no matrix capacity), they are dropped and you lose.</li>
+    </ul>
+  </div>
+</div>
+<!-- ==== Project 21 End ==== -->
 
 <!-- ==== Project 20 Start ==== -->
 <div id="arrows" class="project-details">
